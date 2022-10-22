@@ -1,0 +1,22 @@
+// Select the database to use.
+use('winterGames');
+
+// The drop() command destroys all data from a collection.
+// Make sure you run it against the correct database and collection.
+db.jogador.drop();
+
+db.jogador.insertMany([
+  {'nome': 'Matheus Frej', 'idade': '21', 'pais': 'UK', 'sexo': 'M', 'esporte': 'Curling'},
+  {'nome': 'Rodrigo Mesel', 'idade': '21', 'pais': 'UK', 'sexo': 'M', 'esporte': 'Curling'},
+  {'nome': 'Lucas Melo', 'idade': '21', 'pais': 'UK', 'sexo': 'M', 'esporte': 'Curling'},
+  {'nome': 'Lucas Oliveira', 'idade': '21', 'pais': 'UK', 'sexo': 'M', 'esporte': 'Curling'},
+  {'nome': 'Raissa Heimann', 'idade': '21', 'pais': 'USA', 'sexo': 'F', 'esporte': 'Biatlo'},
+  {'nome': 'Artur Santos', 'idade': '21', 'pais': 'BR', 'sexo': 'M', 'esporte': 'Biatlo'},
+  {'nome': 'Victor Mateus', 'idade': '21', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Biatlo'},
+]);
+
+db.times.drop();
+
+db.times.insertMany([
+  {'esporte': 'Curling', 'pais': 'UK', 'jogadores': []}
+])
