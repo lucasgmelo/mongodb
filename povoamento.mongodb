@@ -1,0 +1,534 @@
+// Usando o banco de dados dos jogos de inverno
+use('winterGames');
+
+db.jogador.drop();
+db.time.drop();
+// Populando coleção de jogadores
+db.jogador.insertMany([
+  
+  // CURLING UK M
+  {'nome': 'Matheus Frej', 'idade': '21', 'pais': 'UK', 'sexo': 'M', 'esporte': 'Curling'},
+  {'nome': 'Rodrigo Mesel', 'idade': '21', 'pais': 'UK', 'sexo': 'M', 'esporte': 'Curling'},
+  {'nome': 'Lucas Melo', 'idade': '21', 'pais': 'UK', 'sexo': 'M', 'esporte': 'Curling'},
+  {'nome': 'Lucas Oliveira', 'idade': '21', 'pais': 'UK', 'sexo': 'M', 'esporte': 'Curling'},
+
+  // CURLING SUECIA M
+  {'nome': 'Niklas Edin', 'idade': '36', 'pais': 'SE', 'sexo': 'M', 'esporte': 'Curling'},
+  {'nome': 'Oskar Eriksson', 'idade': '28', 'pais': 'SE', 'sexo': 'M', 'esporte': 'Curling'},
+  {'nome': 'Rasmus Wranå', 'idade': '31', 'pais': 'SE', 'sexo': 'M', 'esporte': 'Curling'},
+  {'nome': 'Christoffer Sundgren', 'idade': '26', 'pais': 'SE', 'sexo': 'M', 'esporte': 'Curling'},
+  
+  // CURLING CANADA M
+  {'nome': 'Brad Gushue', 'idade': '37', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Curling'},
+  {'nome': 'Mark Nichols', 'idade': '41', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Curling'},
+  {'nome': 'Geoff Walker', 'idade': '29', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Curling'},
+  {'nome': 'Brett Gallant', 'idade': '23', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Curling'},
+  
+  // CURLING CHINA F
+  {'nome': 'Han Yu', 'idade': '30', 'pais': 'CN', 'sexo': 'F', 'esporte': 'Curling'},
+  {'nome': 'Wang Rui', 'idade': '33', 'pais': 'CN', 'sexo': 'F', 'esporte': 'Curling'},
+  {'nome': 'Dong Ziqi', 'idade': '27', 'pais': 'CN', 'sexo': 'F', 'esporte': 'Curling'},
+  {'nome': 'Zhang Lijun', 'idade': '29', 'pais': 'CN', 'sexo': 'F', 'esporte': 'Curling'},
+
+  // CURLING DINAMARCA F
+  {'nome': 'Madeleine Dupont', 'idade': '28', 'pais': 'DK', 'sexo': 'F', 'esporte': 'Curling'},
+  {'nome': 'Mathilde Halse', 'idade': '33', 'pais': 'DK', 'sexo': 'F', 'esporte': 'Curling'},
+  {'nome': 'Denise Dupont', 'idade': '30', 'pais': 'DK', 'sexo': 'F', 'esporte': 'Curling'},
+  {'nome': 'My Larsen', 'idade': '27', 'pais': 'DK', 'sexo': 'F', 'esporte': 'Curling'},
+
+  // CURLING CANADA F
+  {'nome': 'Jennifer Jones', 'idade': '32', 'pais': 'CA', 'sexo': 'F', 'esporte': 'Curling'},
+  {'nome': 'Kaitlyn Lawes', 'idade': '25', 'pais': 'CA', 'sexo': 'F', 'esporte': 'Curling'},
+  {'nome': 'Jocelyn Peterman', 'idade': '31', 'pais': 'CA', 'sexo': 'F', 'esporte': 'Curling'},
+  {'nome': 'Dawn McEwen', 'idade': '33', 'pais': 'CA', 'sexo': 'F', 'esporte': 'Curling'},
+
+  // Biatlo (individual)
+  {'nome': 'Raissa Heimann', 'idade': '21', 'pais': 'USA', 'sexo': 'F', 'esporte': 'Biatlo'},
+  {'nome': 'Artur Santos', 'idade': '21', 'pais': 'BR', 'sexo': 'M', 'esporte': 'Biatlo'},
+  {'nome': 'Victor Mateus', 'idade': '21', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Biatlo'},
+
+  // HOCKEY USA M
+  {'nome': 'Matty Beniers', 'idade': '20', 'pais': 'USA', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Kenny Agostino', 'idade': '30', 'pais': 'USA', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Jake Sanderson', 'idade': '20', 'pais': 'USA', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Nick Abruzzese', 'idade': '23', 'pais': 'USA', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Drew Commesso', 'idade': '20', 'pais': 'USA', 'sexo': 'M', 'esporte': 'Hockey'},
+
+  //HOCKEY CANADA M
+  {'nome': 'Corban Knight', 'idade': '32', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Ben Street', 'idade': '35', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Devon Levi', 'idade': '21', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Morgan Ellis', 'idade': '30', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Eric O’Dell', 'idade': '32', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Hockey'},
+  
+  //HOCKEY ALEMANHA M
+  {'nome': 'Tobias Rieder', 'idade': '29', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Nicolas Krämmer', 'idade': '30', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Fabio Wagner', 'idade': '27', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Jonas Muller', 'idade': '27', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Danny aus den Birken', 'idade': '37', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Hockey'},
+
+  // Patinação artística (individual)
+  {'nome': 'Mariah Bell', 'idade': '25', 'pais': 'USA', 'sexo': 'F', 'esporte': 'Patinação artística'},
+  {'nome': 'Karen Chen', 'idade': '22', 'pais': 'USA', 'sexo': 'F', 'esporte': 'Patinação artística'},
+  {'nome': 'Madeline Schizas', 'idade': '19', 'pais': 'CA', 'sexo': 'F', 'esporte': 'Patinação artística'},
+  {'nome': 'Anita Östlund', 'idade': '21', 'pais': 'SE', 'sexo': 'F', 'esporte': 'Patinação artística'},
+  {'nome': 'Zhu Yi', 'idade': '20', 'pais': 'CN', 'sexo': 'F', 'esporte': 'Patinação artística'},
+
+  // SnowBoard (individual)
+  {'nome': 'Chase Blackwell', 'idade': '23', 'pais': 'USA', 'sexo': 'M', 'esporte': 'Snowboard'},
+  {'nome': 'Chase Josey', 'idade': '27', 'pais': 'USA', 'sexo': 'M', 'esporte': 'Snowboard'},
+  {'nome': 'Benjamin Karl', 'idade': '37', 'pais': 'AU', 'sexo': 'M', 'esporte': 'Snowboard'},
+  {'nome': 'Su Yiming', 'idade': '18', 'pais': 'CN', 'sexo': 'M', 'esporte': 'Snowboard'},
+  {'nome': 'Mons Røisland', 'idade': '25', 'pais': 'NO', 'sexo': 'M', 'esporte': 'Snowboard'},
+]);
+
+// Alterando nome errado de jogador
+db.jogador.updateOne({nome: 'Victor Mateus'}, {$set: {nome: "Victor Matheus"}});
+
+db.time.drop();
+
+// Populando coleção de times
+db.time.insertMany([
+  // Curling M
+  // UK
+  {'esporte': 'Curling', 'pais': 'UK', 'sexo': 'M','jogadores': [
+    db.jogador.findOne({nome: 'Matheus Frej'}),
+    db.jogador.findOne({nome: 'Rodrigo Mesel'}),
+    db.jogador.findOne({nome: 'Lucas Melo'}),
+    db.jogador.findOne({nome: 'Lucas Oliveira'}),
+  ]},
+  // SUECIA
+  {'esporte': 'Curling', 'pais': 'SE', 'sexo': 'M','jogadores': [
+    db.jogador.findOne({nome: 'Niklas Edin'}),
+    db.jogador.findOne({nome: 'Oskar Eriksson'}),
+    db.jogador.findOne({nome: 'Rasmus Wranå'}),
+    db.jogador.findOne({nome: 'Christoffer Sundgren'}),
+  ]},
+  // CANADA
+  {'esporte': 'Curling', 'pais': 'CA', 'sexo': 'M','jogadores': [
+    db.jogador.findOne({nome: 'Niklas Edin'}),
+    db.jogador.findOne({nome: 'Oskar Eriksson'}),
+    db.jogador.findOne({nome: 'Rasmus Wranå'}),
+    db.jogador.findOne({nome: 'Christoffer Sundgren'}),
+  ]},
+
+  // Curling F
+  // CHINA
+  {'esporte': 'Curling', 'pais': 'CN', 'sexo': 'F','jogadores': [
+    db.jogador.findOne({nome: 'Han Yu'}),
+    db.jogador.findOne({nome: 'Wang Rui'}),
+    db.jogador.findOne({nome: 'Dong Ziqi'}),
+    db.jogador.findOne({nome: 'Zhang Lijun'}),
+  ]},
+  // DINAMARCA
+  {'esporte': 'Curling', 'pais': 'DK', 'sexo': 'F','jogadores': [
+    db.jogador.findOne({nome: 'Madeleine Dupont'}),
+    db.jogador.findOne({nome: 'Mathilde Halse'}),
+    db.jogador.findOne({nome: 'Denise Dupont'}),
+    db.jogador.findOne({nome: 'My Larsen'}),
+  ]},
+  // CANADA
+  {'esporte': 'Curling', 'pais': 'CA', 'sexo': 'F','jogadores': [
+    db.jogador.findOne({nome: 'Jennifer Jones'}),
+    db.jogador.findOne({nome: 'Kaitlyn Lawes'}),
+    db.jogador.findOne({nome: 'Jocelyn Peterman'}),
+    db.jogador.findOne({nome: 'Dawn McEwen'}),
+  ]},
+
+
+  // HOCKEY M
+  // ALEMANHA
+  {'esporte': 'Hockey', 'pais': 'DE', 'sexo': 'M','jogadores': [
+    db.jogador.findOne({nome: 'Tobias Rieder'}),
+    db.jogador.findOne({nome: 'Nicolas Krämmer'}),
+    db.jogador.findOne({nome: 'Fabio Wagner'}),
+    db.jogador.findOne({nome: 'Jonas Muller'}),
+    db.jogador.findOne({nome: 'Danny aus den Birken'}),
+  ]},
+  //CANADA
+  {'esporte': 'Hockey', 'pais': 'CA', 'sexo': 'M','jogadores': [
+    db.jogador.findOne({nome: 'Corban Knight'}),
+    db.jogador.findOne({nome: 'Ben Street'}),
+    db.jogador.findOne({nome: 'Devon Levi'}),
+    db.jogador.findOne({nome: 'Morgan Ellis'}),
+    db.jogador.findOne({nome: 'Eric O’Dell'}),
+  ]},
+  //USA
+  {'esporte': 'Hockey', 'pais': 'USA', 'sexo': 'M','jogadores': [
+    db.jogador.findOne({nome: 'Matty Beniers'}),
+    db.jogador.findOne({nome: 'Kenny Agostino'}),
+    db.jogador.findOne({nome: 'Jake Sanderson'}),
+    db.jogador.findOne({nome: 'Nick Abruzzese'}),
+    db.jogador.findOne({nome: 'Drew Commesso'}),
+  ]},
+])
+
+use('winterGames')
+db.pais.drop();
+
+// Populando coleção de Países
+db.pais.insertMany([
+  //CANADA
+  {
+    'nome': 'Canadá',
+    'sigla': 'CA',
+    'total_medalhas': {
+      'ouro': 0,
+      'prata': 0,
+      'bronze': 0},
+    'lista_medalhas': [
+      {
+        'nome': 'Curling',
+        'sexo': 'M',
+        'tipo': 'Grupo',
+        'medalhas': 
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Curling',
+        'sexo': 'F',
+        'tipo': 'Grupo',
+        'medalhas': 
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Hockey',
+        'sexo': 'M',
+        'tipo': 'Grupo',
+        'medalhas': 
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Victor Matheus',
+        'sexo': 'M',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Madeline Schizas',
+        'sexo': 'F',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+    ],
+  },
+
+  //BRASIL
+  {
+    'nome': 'Brasil',
+    'sigla': 'BR',
+    'total_medalhas': {
+      'ouro': 0,
+      'prata': 0,
+      'bronze': 0},
+    'lista_medalhas': [
+      {
+        'nome': 'Artur Santos',
+        'sexo': 'M',
+        'tipo': 'Individual',
+        'medalhas': 
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+    ],
+  },
+  
+  //DINAMARCA
+  {
+    'nome': 'Dinamarca',
+    'sigla': 'DK',
+    'total_medalhas': {
+      'ouro': 0,
+      'prata': 0,
+      'bronze': 0},
+    'lista_medalhas': [
+      {
+        'nome': 'Curling',
+        'sexo': 'F',
+        'tipo': 'Grupo',
+        'medalhas': 
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+    ],
+  },
+
+  //USA
+  {
+    'nome': 'Estados Unidos',
+    'sigla': 'USA',
+    'total_medalhas': {
+      'ouro': 0,
+      'prata': 0,
+      'bronze': 0},
+    'lista_medalhas': [
+      {
+        'nome': 'Hockey',
+        'sexo': 'M',
+        'tipo': 'Grupo',
+        'medalhas': 
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Raissa Heimann',
+        'sexo': 'F',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Mariah Bell',
+        'sexo': 'F',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Karen Chen',
+        'sexo': 'F',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Chase Blackwell',
+        'sexo': 'M',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Chase Josey',
+        'sexo': 'M',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+    ],
+  },
+
+  // China
+  {
+    'nome': 'China',
+    'sigla': 'CN',
+    'total_medalhas': {
+      'ouro': 0,
+      'prata': 0,
+      'bronze': 0},
+    'lista_medalhas': [
+      {
+        'nome': 'Curling',
+        'sexo': 'F',
+        'tipo': 'Grupo',
+        'medalhas': 
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Su Yiming',
+        'sexo': 'M',
+        'tipo': 'Individual',
+        'medalhas': 
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Zhu Yi',
+        'sexo': 'F',
+        'tipo': 'Individual',
+        'medalhas': 
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 0
+        }
+      }
+    ],
+  },
+
+  //UK
+  {
+    'nome': 'Reino Unido',
+    'sigla': 'UK',
+    'total_medalhas': {
+      'ouro': 0,
+      'prata': 0,
+      'bronze': 0},
+    'lista_medalhas': [
+      {
+        'nome': 'Curling',
+        'sexo': 'M',
+        'tipo': 'Grupo',
+        'medalhas': 
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+    ],
+  },
+
+  // Alemanha
+  {
+    'nome': 'Alemanha',
+    'sigla': 'DE',
+    'total_medalhas': {
+      'ouro': 0,
+      'prata': 0,
+      'bronze': 0},
+    'lista_medalhas': [
+      {
+        'nome': 'Hockey',
+        'sexo': 'M',
+        'tipo': 'Grupo',
+        'medalhas': 
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+    ],
+  },
+
+  // Suecia
+  {
+    'nome': 'Suecia',
+    'sigla': 'SE',
+    'total_medalhas': {
+      'ouro': 0,
+      'prata': 0,
+      'bronze': 0},
+    'lista_medalhas': [
+      {
+        'nome': 'Curling',
+        'sexo': 'M',
+        'tipo': 'Grupo',
+        'medalhas': 
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Anita Östlund',
+        'sexo': 'F',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+    ],
+  },
+  
+  // Noruega
+  {
+    'nome': 'Noruega',
+    'sigla': 'NO',
+    'total_medalhas': {
+      'ouro': 0,
+      'prata': 0,
+      'bronze': 0},
+    'lista_medalhas': [
+      {
+        'nome': 'Mons Røisland',
+        'sexo': 'M',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+    ],
+  },
+
+  // Austria
+  {
+    'nome': 'Austria',
+    'sigla': 'AU',
+    'total_medalhas': {
+      'ouro': 0,
+      'prata': 0,
+      'bronze': 0},
+    'lista_medalhas': [
+      {
+        'nome': 'Benjamin Karl',
+        'sexo': 'M',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+    ],
+  },
+
+])
