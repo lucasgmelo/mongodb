@@ -15,13 +15,48 @@ db.time.find( { 'jogadores': { $size: 4 } } );
 use('winterGames');
 db.pais.find( {'lista_medalhas': { $size: 1 }});
 
-
-// AGREGATE
+// 4.AGREGGATE, 5.MATCH, 7.GTE, 19.PRETTY, 6.PROJECT, 14.SORT
+// Paises que tem ao menos uma medalha de ouro em ordem decrescente
+use('winterGames');
 db.pais.aggregate([
-    {$match:{}},
-    {$group:},
-    {$project:}
-    ])
+    {$match: {
+        "total_medalhas.ouro": {$gte: 1}
+        }
+    },  
+    {$project: {
+        _id: false, nome: true, sigla:true, total_medalhas: true
+        }
+    }
+    
+]).sort({"total_medalhas.ouro": -1}).pretty();
+
+// 4.AGGREGATE, 8.GROUP, 9.SUM, 19.PRETTY
+// Mostrar países com maior número de medalhas conquistadas em ordem decrescente
+use('winterGames');
+db.pais.aggregate([
+    {
+        $group: {
+            _id: "$nome",
+            medalhas_totais: {$sum: {$add: ["$total_medalhas.ouro", "$total_medalhas.prata", "$total_medalhas.bronze"]}
+        }
+    }},
+]).sort({medalhas_totais: -1}).pretty();
+
+use('winterGames');
+db.jogador.aggregate([{ 
+    $group: {
+        _id:"$nome",                                                                     
+        value: { $max: "$idade" } 
+    } 
+}]);
+
+
+use('winterGames');
+db.jogador.find({$where:
+    function(){
+        return(this.idade == {$max: '$idade'})
+    }}
+).pretty();
 
 //10. COUNT
 // Quantidade de jogadores que participam da olimpíada
