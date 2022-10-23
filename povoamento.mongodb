@@ -356,8 +356,8 @@ db.nacao.insertMany([
     'sigla': 'CA',
     'total_medalhas': {
       'ouro': 1,
-      'prata': 1,
-      'bronze': 2},
+      'prata': 3,
+      'bronze': 4},
     'lista_medalhas': [
       {
         'nome': 'Curling',
@@ -457,7 +457,7 @@ db.nacao.insertMany([
     'total_medalhas': {
       'ouro': 1,
       'prata': 0,
-      'bronze': 0},
+      'bronze': 1},
     'lista_medalhas': [
       {
         'nome': 'Artur Santos',
@@ -512,9 +512,9 @@ db.nacao.insertMany([
     'nome': 'Estados Unidos',
     'sigla': 'USA',
     'total_medalhas': {
-      'ouro': 0,
+      'ouro': 1,
       'prata': 2,
-      'bronze': 2},
+      'bronze': 3},
     'lista_medalhas': [
       {
         'nome': 'Hockey',
@@ -602,9 +602,9 @@ db.nacao.insertMany([
     'nome': 'China',
     'sigla': 'CN',
     'total_medalhas': {
-      'ouro': 1,
+      'ouro': 2,
       'prata': 1,
-      'bronze': 0},
+      'bronze': 1},
     'lista_medalhas': [
       {
         'nome': 'Curling',
@@ -681,9 +681,9 @@ db.nacao.insertMany([
     'nome': 'Alemanha',
     'sigla': 'DE',
     'total_medalhas': {
-      'ouro': 1,
-      'prata': 0,
-      'bronze': 0},
+      'ouro': 5,
+      'prata': 2,
+      'bronze': 2},
     'lista_medalhas': [
       {
         'nome': 'Hockey',
@@ -792,9 +792,9 @@ db.nacao.insertMany([
     'nome': 'Suecia',
     'sigla': 'SE',
     'total_medalhas': {
-      'ouro': 1,
+      'ouro': 2,
       'prata': 1,
-      'bronze': 0},
+      'bronze': 1},
     'lista_medalhas': [
       {
         'nome': 'Curling',
@@ -848,8 +848,8 @@ db.nacao.insertMany([
     'nome': 'Noruega',
     'sigla': 'NO',
     'total_medalhas': {
-      'ouro': 1,
-      'prata': 0,
+      'ouro': 3,
+      'prata': 3,
       'bronze': 0},
     'lista_medalhas': [
       {
@@ -927,9 +927,9 @@ db.nacao.insertMany([
     'nome': 'Austria',
     'sigla': 'AU',
     'total_medalhas': {
-      'ouro': 0,
-      'prata': 1,
-      'bronze': 0},
+      'ouro': 1,
+      'prata': 3,
+      'bronze': 2},
     'lista_medalhas': [
       {
         'nome': 'Benjamin Karl',
