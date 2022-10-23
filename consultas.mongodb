@@ -1,0 +1,34 @@
+// As consultas 25. UPDATE, 27. RENAMECOLLECTION e 30. FINDONE estão no arquivo de povoamento.
+
+// 1. e 2. USE and FIND
+// Consultar jogadores que participam da olimpíada e jogam SnowBoard
+use('winterGames');
+db.jogador.find({'esporte': 'Biatlo'});
+
+// 3. SIZE
+// Consultar times que são compostos por 4 integrantes
+use('winterGames');
+db.time.find( { 'jogadores': { $size: 4 } } );
+
+// 3. SIZE
+// Consultar países que estão participando de exatamente 1 esporte
+use('winterGames');
+db.pais.find( {'lista_medalhas': { $size: 1 }});
+
+
+// AGREGATE
+db.pais.aggregate([
+    {$match:{}},
+    {$group:},
+    {$project:}
+    ])
+
+//10. COUNT
+// Quantidade de jogadores que participam da olimpíada
+// O COUNT ESTÁ DEPRECIADO, HOJE EM DIA USAM ESSE COUNTDOCUMENTS
+use('winterGames');
+db.jogador.countDocuments();
+
+// Quantidade de países que participam da olimpíada
+use('winterGames');
+db.pais.countDocuments();

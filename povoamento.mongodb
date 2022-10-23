@@ -42,10 +42,95 @@ db.jogador.insertMany([
   {'nome': 'Jocelyn Peterman', 'idade': '31', 'pais': 'CA', 'sexo': 'F', 'esporte': 'Curling'},
   {'nome': 'Dawn McEwen', 'idade': '33', 'pais': 'CA', 'sexo': 'F', 'esporte': 'Curling'},
 
-  // Biatlo (individual)
-  {'nome': 'Raissa Heimann', 'idade': '21', 'pais': 'USA', 'sexo': 'F', 'esporte': 'Biatlo'},
+  // Biatlo (individual) M
   {'nome': 'Artur Santos', 'idade': '21', 'pais': 'BR', 'sexo': 'M', 'esporte': 'Biatlo'},
   {'nome': 'Victor Mateus', 'idade': '21', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Biatlo'},
+  {'nome': 'Rodöryg Moisël', 'idade': '24', 'pais': 'NO', 'sexo': 'M', 'esporte': 'Biatlo'},
+
+  // Biatlo (individual) F
+  {'nome': 'Marte Olsbu Røiseland', 'idade': '24', 'pais': 'NO', 'sexo': 'F', 'esporte': 'Biatlo'},
+  {'nome': 'Denise Herrmann', 'idade': '23', 'pais': 'CA', 'sexo': 'F', 'esporte': 'Biatlo'},
+  {'nome': 'Raissa Heimann', 'idade': '21', 'pais': 'USA', 'sexo': 'F', 'esporte': 'Biatlo'},
+
+  // Bobsled4 M ALEMANHA
+  {'nome': 'Francesco Friedrich', 'idade': '32', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Bobsled4'},
+  {'nome': 'Alexander Schueller', 'idade': '25', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Bobsled4'},
+  {'nome': 'Thorsten Margis', 'idade': '33', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Bobsled4'},
+  {'nome': 'Candy Bauer', 'idade': '36', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Bobsled4'},
+
+  // Bobsled4 M CANADA
+  {'nome': 'Justin Kripps', 'idade': '35', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Bobsled4'},
+  {'nome': 'Ben Coakwell', 'idade': '35', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Bobsled4'},
+  {'nome': 'Ryan Sommer', 'idade': '29', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Bobsled4'},
+  {'nome': 'Cameron Stones', 'idade': '30', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Bobsled4'},
+
+  // Bobsled4 M UK
+  {'nome': 'Brad Hall', 'idade': '32', 'pais': 'UK', 'sexo': 'M', 'esporte': 'Bobsled4'},
+  {'nome': 'Greg Cackett', 'idade': '33', 'pais': 'UK', 'sexo': 'M', 'esporte': 'Bobsled4'},
+  {'nome': 'Taylor Lawrence', 'idade': '26', 'pais': 'UK', 'sexo': 'M', 'esporte': 'Bobsled4'},
+  {'nome': 'Nick Gleeson', 'idade': '26', 'pais': 'UK', 'sexo': 'M', 'esporte': 'Bobsled4'},
+
+  // Bobsled4 M BR
+  {'nome': 'Edson Bindilatti', 'idade': '43', 'pais': 'BR', 'sexo': 'M', 'esporte': 'Bobsled4'},
+  {'nome': 'Edson Ricardo Martins', 'idade': '33', 'pais': 'BR', 'sexo': 'M', 'esporte': 'Bobsled4'},
+  {'nome': 'Rafael Souza da Silva', 'idade': '26', 'pais': 'BR', 'sexo': 'M', 'esporte': 'Bobsled4'},
+  {'nome': 'Erick Gilson Vianna Jeronimo', 'idade': '29', 'pais': 'BR', 'sexo': 'M', 'esporte': 'Bobsled4'},
+
+  // Bobsled2 M ALEMANHA
+  {'nome': 'Johannes Lochner', 'idade': '32', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Bobsled2'},
+  {'nome': 'Florian Bauer', 'idade': '28', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Bobsled2'},
+
+  //Bobsled2 M AUSTRIA
+  {'nome': 'Benjamin Maier', 'idade': '28', 'pais': 'AU', 'sexo': 'M', 'esporte': 'Bobsled2'},
+  {'nome': 'Markus Sammer', 'idade': '34', 'pais': 'AU', 'sexo': 'M', 'esporte': 'Bobsled2'},
+  
+  //Bobsled2 M CANADA
+  {'nome': 'Christopher Spring', 'idade': '38', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Bobsled2'},
+  {'nome': 'Mike Evelyn', 'idade': '29', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Bobsled2'},
+  
+  //Bobsled2 M USA
+  {'nome': 'Frank Delduca', 'idade': '31', 'pais': 'USA', 'sexo': 'M', 'esporte': 'Bobsled2'},
+  {'nome': 'Hakeem Abdul-Saboor', 'idade': '35', 'pais': 'USA', 'sexo': 'M', 'esporte': 'Bobsled2'},
+
+  // Bobsled Monobob F
+  {'nome': 'Kaillie Humphries', 'idade': '37', 'pais': 'USA', 'sexo': 'F', 'esporte': 'Bobsled Monobob'},
+  {'nome': 'Elana Meyers Taylor', 'idade': '38', 'pais': 'USA', 'sexo': 'F', 'esporte': 'Bobsled Monobob'},
+  {'nome': 'Christine De Bruin', 'idade': '33', 'pais': 'CA', 'sexo': 'F', 'esporte': 'Bobsled Monobob'},
+  {'nome': 'Laura Nolte', 'idade': '24', 'pais': 'DE', 'sexo': 'F', 'esporte': 'Bobsled Monobob'},
+  {'nome': 'Mingming Huai', 'idade': '27', 'pais': 'CN', 'sexo': 'F', 'esporte': 'Bobsled Monobob'},
+  {'nome': 'Katrin Beierl', 'idade': '31', 'pais': 'AU', 'sexo': 'F', 'esporte': 'Bobsled Monobob'},
+
+  // Bobsled2 F ALEMANHA
+  {'nome': 'Mariama Jamanka', 'idade': '32', 'pais': 'DE', 'sexo': 'F', 'esporte': 'Bobsled2'},
+  {'nome': 'Alexandra Burghardt', 'idade': '28', 'pais': 'DE', 'sexo': 'F', 'esporte': 'Bobsled2'},
+
+  // Bobsled2 F CANADA
+  {'nome': 'Cynthia Appiah', 'idade': '32', 'pais': 'CA', 'sexo': 'F', 'esporte': 'Bobsled2'},
+  {'nome': 'Dawn Richardson Wilson', 'idade': '23', 'pais': 'CA', 'sexo': 'F', 'esporte': 'Bobsled2'},
+
+  // Bobsled2 F CHINA
+  {'nome': 'Qing Ying', 'idade': '25', 'pais': 'CN', 'sexo': 'F', 'esporte': 'Bobsled2'},
+  {'nome': 'Jiani Du', 'idade': '23', 'pais': 'CN', 'sexo': 'F', 'esporte': 'Bobsled2'},
+
+  // Speed Skating M
+  {'nome': 'Nils Van Der Poel', 'idade': '26', 'pais': 'SE', 'sexo': 'M', 'esporte': 'Speed Skating'},
+  {'nome': 'Graeme Fish', 'idade': '25', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Speed Skating'},
+  {'nome': 'Patrick Beckert', 'idade': '32', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Speed Skating'},
+  {'nome': 'Ziwei Ren', 'idade': '25', 'pais': 'CN', 'sexo': 'M', 'esporte': 'Speed Skating'},
+  {'nome': 'Wenlong Li', 'idade': '21', 'pais': 'CN', 'sexo': 'M', 'esporte': 'Speed Skating'},
+  {'nome': 'Andrew Heo', 'idade': '21', 'pais': 'USA', 'sexo': 'M', 'esporte': 'Speed Skating'},
+
+  // Ski Jumping M (individual)
+  {'nome': 'Marius Lindvik', 'idade': '24', 'pais': 'NO', 'sexo': 'M', 'esporte': 'Ski Jumping'},
+  {'nome': 'Karl Geiger', 'idade': '25', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Ski Jumping'},
+  {'nome': 'Manuel Fettner', 'idade': '37', 'pais': 'AU', 'sexo': 'M', 'esporte': 'Ski Jumping'},
+  {'nome': 'Halvor Egner Granerud', 'idade': '26', 'pais': 'NO', 'sexo': 'M', 'esporte': 'Ski Jumping'},
+
+  // Ski Jumping F (individual)
+  {'nome': 'Katharina Althaus', 'idade': '26', 'pais': 'DE', 'sexo': 'F', 'esporte': 'Ski Jumping'},
+  {'nome': 'Silje Opseth', 'idade': '22', 'pais': 'NO', 'sexo': 'F', 'esporte': 'Ski Jumping'},
+  {'nome': 'Frida Westman', 'idade': '21', 'pais': 'SE', 'sexo': 'F', 'esporte': 'Ski Jumping'},
+  {'nome': 'Lisa Eder', 'idade': '21', 'pais': 'AU', 'sexo': 'F', 'esporte': 'Ski Jumping'},
 
   // HOCKEY USA M
   {'nome': 'Matty Beniers', 'idade': '20', 'pais': 'USA', 'sexo': 'M', 'esporte': 'Hockey'},
@@ -81,12 +166,38 @@ db.jogador.insertMany([
   {'nome': 'Benjamin Karl', 'idade': '37', 'pais': 'AU', 'sexo': 'M', 'esporte': 'Snowboard'},
   {'nome': 'Su Yiming', 'idade': '18', 'pais': 'CN', 'sexo': 'M', 'esporte': 'Snowboard'},
   {'nome': 'Mons Røisland', 'idade': '25', 'pais': 'NO', 'sexo': 'M', 'esporte': 'Snowboard'},
+
+  // Combinado Nórdico (Individual)
+  {'nome': 'Jørgen Graabak', 'idade': '31', 'pais': 'NO', 'sexo': 'M', 'esporte': 'Combinado Nordico'},
+  {'nome': 'Jens Lurås Oftebro', 'idade': '22', 'pais': 'NO', 'sexo': 'M', 'esporte': 'Combinado Nordico'},
+  {'nome': 'Lukas Greiderer', 'idade': '29', 'pais': 'AU', 'sexo': 'M', 'esporte': 'Combinado Nordico'},
+  {'nome': 'Vinzenz Geiger', 'idade': '25', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Combinado Nordico'},
+  {'nome': 'Martin Fritz', 'idade': '27', 'pais': 'AU', 'sexo': 'M', 'esporte': 'Combinado Nordico'},
+  
+  // Esqui alpino (Individual)
+  {'nome': 'Johannes Strolz', 'idade': '30', 'pais': 'AU', 'sexo': 'M', 'esporte': 'Esqui Alpino'},
+  {'nome': 'Aleksander Aamodt Kilde', 'idade': '30', 'pais': 'NO', 'sexo': 'M', 'esporte': 'Esqui Alpino'},
+  {'nome': 'James Crawford', 'idade': '25', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Esqui Alpino'},
+  {'nome': 'Marco Schwarz', 'idade': '27', 'pais': 'AU', 'sexo': 'M', 'esporte': 'Esqui Alpino'},
+  
+  // Luge(Individual)
+  {'nome': 'Johannes Ludwig', 'idade': '36', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Luge'},
+  {'nome': 'Wolfgang Kindl', 'idade': '34', 'pais': 'AU', 'sexo': 'M', 'esporte': 'Luge'},
+  {'nome': 'Toni Eggert', 'idade': '34', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Luge'},
+  {'nome': 'Lorenz Koller', 'idade': '28', 'pais': 'AU', 'sexo': 'M', 'esporte': 'Luge'},
+  {'nome': 'Thomas Steu', 'idade': '28', 'pais': 'AU', 'sexo': 'M', 'esporte': 'Luge'},
 ]);
 
+// 25. UPDATE
 // Alterando nome errado de jogador
 db.jogador.updateOne({nome: 'Victor Mateus'}, {$set: {nome: "Victor Matheus"}});
 
 db.time.drop();
+
+
+//30. findOne
+// Para adicionar ao time, realizamos através do findOne,
+// pegando o dado diretamente da collection de jogadores
 
 // Populando coleção de times
 db.time.insertMany([
@@ -162,21 +273,91 @@ db.time.insertMany([
     db.jogador.findOne({nome: 'Nick Abruzzese'}),
     db.jogador.findOne({nome: 'Drew Commesso'}),
   ]},
+  
+  //Bobsled 4 M
+  //UK
+  {'esporte': 'Bobsled4', 'pais': 'UK', 'sexo': 'M','jogadores': [
+    db.jogador.findOne({nome: 'Brad Hall'}),
+    db.jogador.findOne({nome: 'Greg Cackett'}),
+    db.jogador.findOne({nome: 'Taylor Lawrence'}),
+    db.jogador.findOne({nome: 'Nick Gleeson'}),
+  ]},
+  //Alemanha
+  {'esporte': 'Bobsled4', 'pais': 'DE', 'sexo': 'M','jogadores': [
+    db.jogador.findOne({nome: 'Francesco Friedrich'}),
+    db.jogador.findOne({nome: 'Alexander Schueller'}),
+    db.jogador.findOne({nome: 'Thorsten Margis'}),
+    db.jogador.findOne({nome: 'Candy Bauer'}),
+  ]},
+  //Canada
+  {'esporte': 'Bobsled4', 'pais': 'CA', 'sexo': 'M','jogadores': [
+    db.jogador.findOne({nome: 'Justin Kripps'}),
+    db.jogador.findOne({nome: 'Ben Coakwell'}),
+    db.jogador.findOne({nome: 'Ryan Sommer'}),
+    db.jogador.findOne({nome: 'Cameron Stones'}),
+  ]},
+  //Brasil
+  {'esporte': 'Bobsled4', 'pais': 'BR', 'sexo': 'M','jogadores': [
+    db.jogador.findOne({nome: 'Edson Bindilatti'}),
+    db.jogador.findOne({nome: 'Edson Ricardo Martins'}),
+    db.jogador.findOne({nome: 'Rafael Souza da Silva'}),
+    db.jogador.findOne({nome: 'Erick Gilson Vianna Jeronimo'}),
+  ]},  
+
+  //Bobsled 2 M
+  //Alemanha
+    {'esporte': 'Bobsled2', 'pais': 'DE', 'sexo': 'M','jogadores': [
+    db.jogador.findOne({nome: 'Johannes Lochner'}),
+    db.jogador.findOne({nome: 'Florian Bauer'}),
+  ]},  
+  //Alemanha
+    {'esporte': 'Bobsled2', 'pais': 'AU', 'sexo': 'M','jogadores': [
+    db.jogador.findOne({nome: 'Benjamin Maier'}),
+    db.jogador.findOne({nome: 'Markus Sammer'}),
+  ]},  
+  //Canada
+  {'esporte': 'Bobsled2', 'pais': 'CA', 'sexo': 'M','jogadores': [
+    db.jogador.findOne({nome: 'Christopher Spring'}),
+    db.jogador.findOne({nome: 'Mike Evelyn'}),
+  ]},    
+  //USA
+  {'esporte': 'Bobsled2', 'pais': 'USA', 'sexo': 'M','jogadores': [
+    db.jogador.findOne({nome: 'Frank Delduca'}),
+    db.jogador.findOne({nome: 'Hakeem Abdul-Saboor'}),
+  ]}, 
+
+  //Bobsled 2 F
+  //Canada
+  {'esporte': 'Bobsled2', 'pais': 'CA', 'sexo': 'F','jogadores': [
+    db.jogador.findOne({nome: 'Cynthia Appiah'}),
+    db.jogador.findOne({nome: 'Dawn Richardson Wilson'}),
+  ]}, 
+  //China
+  {'esporte': 'Bobsled2', 'pais': 'CN', 'sexo': 'F','jogadores': [
+    db.jogador.findOne({nome: 'Qing Ying'}),
+    db.jogador.findOne({nome: 'Jiani Du'}),
+  ]},   
+  //Alemanha
+  {'esporte': 'Bobsled2', 'pais': 'DE', 'sexo': 'F','jogadores': [
+    db.jogador.findOne({nome: 'Mariama Jamanka'}),
+    db.jogador.findOne({nome: 'Alexandra Burghardt'}),
+  ]},   
+
 ])
 
 use('winterGames')
-db.pais.drop();
+db.nacao.drop();
 
 // Populando coleção de Países
-db.pais.insertMany([
+db.nacao.insertMany([
   //CANADA
   {
     'nome': 'Canadá',
     'sigla': 'CA',
     'total_medalhas': {
-      'ouro': 0,
-      'prata': 0,
-      'bronze': 0},
+      'ouro': 1,
+      'prata': 1,
+      'bronze': 2},
     'lista_medalhas': [
       {
         'nome': 'Curling',
@@ -185,7 +366,7 @@ db.pais.insertMany([
         'medalhas': 
         {
           'ouro': 0,
-          'prata': 0,
+          'prata': 1,
           'bronze': 0
         }
       },
@@ -195,7 +376,7 @@ db.pais.insertMany([
         'tipo': 'Grupo',
         'medalhas': 
         {
-          'ouro': 0,
+          'ouro': 1,
           'prata': 0,
           'bronze': 0
         }
@@ -208,6 +389,17 @@ db.pais.insertMany([
         {
           'ouro': 0,
           'prata': 0,
+          'bronze': 1
+        }
+      },
+      {
+        'nome': 'Bobsled4',
+        'sexo': 'M',
+        'tipo': 'Grupo',
+        'medalhas': 
+        {
+          'ouro': 0,
+          'prata': 1,
           'bronze': 0
         }
       },
@@ -219,17 +411,39 @@ db.pais.insertMany([
         {
           'ouro': 0,
           'prata': 0,
-          'bronze': 0
+          'bronze': 1
         }
       },
       {
-        'nome': 'Madeline Schizas',
+        'nome': 'Bobsled2',
         'sexo': 'F',
+        'tipo': 'Grupo',
+        'medalhas': 
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 1
+        }
+      },
+      {
+        'nome': 'James Crawford',
+        'sexo': 'M',
         'tipo': 'Individual',
         'medalhas':
         {
           'ouro': 0,
           'prata': 0,
+          'bronze': 1
+        }
+      },
+      {
+        'nome': 'Graeme Fish',
+        'sexo': 'M',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 0,
+          'prata': 1,
           'bronze': 0
         }
       },
@@ -241,7 +455,7 @@ db.pais.insertMany([
     'nome': 'Brasil',
     'sigla': 'BR',
     'total_medalhas': {
-      'ouro': 0,
+      'ouro': 1,
       'prata': 0,
       'bronze': 0},
     'lista_medalhas': [
@@ -251,9 +465,20 @@ db.pais.insertMany([
         'tipo': 'Individual',
         'medalhas': 
         {
-          'ouro': 0,
+          'ouro': 1,
           'prata': 0,
           'bronze': 0
+        }
+      },
+      {
+        'nome': 'Bobsled4',
+        'sexo': 'M',
+        'tipo': 'Grupo',
+        'medalhas': 
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 1
         }
       },
     ],
@@ -266,7 +491,7 @@ db.pais.insertMany([
     'total_medalhas': {
       'ouro': 0,
       'prata': 0,
-      'bronze': 0},
+      'bronze': 1},
     'lista_medalhas': [
       {
         'nome': 'Curling',
@@ -276,7 +501,7 @@ db.pais.insertMany([
         {
           'ouro': 0,
           'prata': 0,
-          'bronze': 0
+          'bronze': 1
         }
       },
     ],
@@ -288,8 +513,8 @@ db.pais.insertMany([
     'sigla': 'USA',
     'total_medalhas': {
       'ouro': 0,
-      'prata': 0,
-      'bronze': 0},
+      'prata': 2,
+      'bronze': 2},
     'lista_medalhas': [
       {
         'nome': 'Hockey',
@@ -298,7 +523,7 @@ db.pais.insertMany([
         'medalhas': 
         {
           'ouro': 0,
-          'prata': 0,
+          'prata': 1,
           'bronze': 0
         }
       },
@@ -309,18 +534,7 @@ db.pais.insertMany([
         'medalhas':
         {
           'ouro': 0,
-          'prata': 0,
-          'bronze': 0
-        }
-      },
-      {
-        'nome': 'Mariah Bell',
-        'sexo': 'F',
-        'tipo': 'Individual',
-        'medalhas':
-        {
-          'ouro': 0,
-          'prata': 0,
+          'prata': 1,
           'bronze': 0
         }
       },
@@ -332,7 +546,7 @@ db.pais.insertMany([
         {
           'ouro': 0,
           'prata': 0,
-          'bronze': 0
+          'bronze': 1
         }
       },
       {
@@ -343,20 +557,43 @@ db.pais.insertMany([
         {
           'ouro': 0,
           'prata': 0,
-          'bronze': 0
+          'bronze': 1
         }
       },
       {
-        'nome': 'Chase Josey',
+        'nome': 'Bobsled2',
         'sexo': 'M',
+        'tipo': 'Grupo',
+        'medalhas': 
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 1
+        }
+      },
+      {
+        'nome': 'Kaillie Humphries',
+        'sexo': 'F',
         'tipo': 'Individual',
         'medalhas':
         {
-          'ouro': 0,
+          'ouro': 1,
           'prata': 0,
           'bronze': 0
         }
       },
+      {
+        'nome': 'Elana Meyers Taylor',
+        'sexo': 'F',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 0,
+          'prata': 1,
+          'bronze': 0
+        }
+      },
+      
     ],
   },
 
@@ -365,8 +602,8 @@ db.pais.insertMany([
     'nome': 'China',
     'sigla': 'CN',
     'total_medalhas': {
-      'ouro': 0,
-      'prata': 0,
+      'ouro': 1,
+      'prata': 1,
       'bronze': 0},
     'lista_medalhas': [
       {
@@ -376,18 +613,7 @@ db.pais.insertMany([
         'medalhas': 
         {
           'ouro': 0,
-          'prata': 0,
-          'bronze': 0
-        }
-      },
-      {
-        'nome': 'Su Yiming',
-        'sexo': 'M',
-        'tipo': 'Individual',
-        'medalhas': 
-        {
-          'ouro': 0,
-          'prata': 0,
+          'prata': 1,
           'bronze': 0
         }
       },
@@ -397,11 +623,33 @@ db.pais.insertMany([
         'tipo': 'Individual',
         'medalhas': 
         {
-          'ouro': 0,
+          'ouro': 1,
           'prata': 0,
           'bronze': 0
         }
-      }
+      },
+      {
+        'nome': 'Bobsled2',
+        'sexo': 'F',
+        'tipo': 'Grupo',
+        'medalhas': 
+        {
+          'ouro': 1,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Ziwei Ren',
+        'sexo': 'M',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 1
+        }
+      },
     ],
   },
 
@@ -412,7 +660,7 @@ db.pais.insertMany([
     'total_medalhas': {
       'ouro': 0,
       'prata': 0,
-      'bronze': 0},
+      'bronze': 1},
     'lista_medalhas': [
       {
         'nome': 'Curling',
@@ -422,7 +670,7 @@ db.pais.insertMany([
         {
           'ouro': 0,
           'prata': 0,
-          'bronze': 0
+          'bronze': 1
         }
       },
     ],
@@ -433,7 +681,7 @@ db.pais.insertMany([
     'nome': 'Alemanha',
     'sigla': 'DE',
     'total_medalhas': {
-      'ouro': 0,
+      'ouro': 1,
       'prata': 0,
       'bronze': 0},
     'lista_medalhas': [
@@ -443,9 +691,97 @@ db.pais.insertMany([
         'tipo': 'Grupo',
         'medalhas': 
         {
-          'ouro': 0,
+          'ouro': 1,
           'prata': 0,
           'bronze': 0
+        }
+      },
+      {
+        'nome': 'Bobsled4',
+        'sexo': 'M',
+        'tipo': 'Grupo',
+        'medalhas': 
+        {
+          'ouro': 1,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Bobsled2',
+        'sexo': 'M',
+        'tipo': 'Grupo',
+        'medalhas': 
+        {
+          'ouro': 1,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Bobsled2',
+        'sexo': 'F',
+        'tipo': 'Grupo',
+        'medalhas': 
+        {
+          'ouro': 0,
+          'prata': 1,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Laura Nolte',
+        'sexo': 'F',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 1
+        }
+      },
+      {
+        'nome': 'Karl Geiger',
+        'sexo': 'M',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 0,
+          'prata': 1,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Katharina Althaus',
+        'sexo': 'F',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 1,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Johannes Ludwig',
+        'sexo': 'M',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 1,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Toni Eggert',
+        'sexo': 'M',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 1
         }
       },
     ],
@@ -456,8 +792,8 @@ db.pais.insertMany([
     'nome': 'Suecia',
     'sigla': 'SE',
     'total_medalhas': {
-      'ouro': 0,
-      'prata': 0,
+      'ouro': 1,
+      'prata': 1,
       'bronze': 0},
     'lista_medalhas': [
       {
@@ -466,7 +802,7 @@ db.pais.insertMany([
         'tipo': 'Grupo',
         'medalhas': 
         {
-          'ouro': 0,
+          'ouro': 1,
           'prata': 0,
           'bronze': 0
         }
@@ -478,6 +814,28 @@ db.pais.insertMany([
         'medalhas':
         {
           'ouro': 0,
+          'prata': 1,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Frida Westman',
+        'sexo': 'F',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 1
+        }
+      },
+      {
+        'nome': 'Nils Van Der Poel',
+        'sexo': 'M',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 1,
           'prata': 0,
           'bronze': 0
         }
@@ -490,7 +848,7 @@ db.pais.insertMany([
     'nome': 'Noruega',
     'sigla': 'NO',
     'total_medalhas': {
-      'ouro': 0,
+      'ouro': 1,
       'prata': 0,
       'bronze': 0},
     'lista_medalhas': [
@@ -500,11 +858,67 @@ db.pais.insertMany([
         'tipo': 'Individual',
         'medalhas':
         {
-          'ouro': 0,
+          'ouro': 1,
           'prata': 0,
           'bronze': 0
         }
       },
+      {
+        'nome': 'Marius Lindvik',
+        'sexo': 'M',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 1,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Silje Opseth',
+        'sexo': 'F',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 0,
+          'prata': 1,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Jørgen Graabak',
+        'sexo': 'M',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 1,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Jens Lurås Oftebro',
+        'sexo': 'M',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 0,
+          'prata': 1,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Aleksander Aamodt Kilde',
+        'sexo': 'M',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 0,
+          'prata': 1,
+          'bronze': 0
+        }
+      },
+
     ],
   },
 
@@ -514,7 +928,7 @@ db.pais.insertMany([
     'sigla': 'AU',
     'total_medalhas': {
       'ouro': 0,
-      'prata': 0,
+      'prata': 1,
       'bronze': 0},
     'lista_medalhas': [
       {
@@ -524,7 +938,62 @@ db.pais.insertMany([
         'medalhas':
         {
           'ouro': 0,
+          'prata': 1,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Bobsled2',
+        'sexo': 'M',
+        'tipo': 'Grupo',
+        'medalhas': 
+        {
+          'ouro': 0,
+          'prata': 1,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Manuel Fettner',
+        'sexo': 'M',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 0,
           'prata': 0,
+          'bronze': 1
+        }
+      },
+      {
+        'nome': 'Lukas Greiderer',
+        'sexo': 'M',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 0,
+          'prata': 0,
+          'bronze': 1
+        }
+      },
+      {
+        'nome': 'Johannes Strolz',
+        'sexo': 'M',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 1,
+          'prata': 0,
+          'bronze': 0
+        }
+      },
+      {
+        'nome': 'Wolfgang Kindl',
+        'sexo': 'M',
+        'tipo': 'Individual',
+        'medalhas':
+        {
+          'ouro': 0,
+          'prata': 1,
           'bronze': 0
         }
       },
@@ -532,3 +1001,9 @@ db.pais.insertMany([
   },
 
 ])
+
+// 27. RENAMECOLLECTION
+// Trocar o nome de Nação para País. Intuitivamente, pensamos que seria melhor
+
+db.nacao.renameCollection("pais");
+db.pais.find()
