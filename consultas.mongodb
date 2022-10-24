@@ -124,7 +124,23 @@ use('winterGames');
 db.jogador.createIndex({esporte: "text"});
 db.jogador.find( { $text: { $search: "Bobsled"} }, {_id: 0, nome: 1, idade: 1, pais: 1, sexo: 1, esporte: 1}).limit(10).sort({'idade': -1}).pretty();
 
-// 28.Cond
-//
+// 28.Cond, 7GTE, 6.Project, 4.Aggregate
+// Apresentar comparação entre países com 3 ou mais medalhas e países com 2 ou menos
 use('winterGames');
-db.
+db.pais.aggregate([
+    {
+    $project: {
+      _id: false,
+      nome: true,
+      Medalhas_de_ouro: '$total_medalhas',
+      Medalhas_de_ouro: {$cond:[{$gte: ['$total_medalhas.ouro', 3]}, "Mais de 2" , "2 ou menos"]}
+    }}
+]).pretty();
+
+
+// 31.AddToSet
+// NAO TERMINADO
+db.pais.updateOne(
+    {_id: }
+)
+
