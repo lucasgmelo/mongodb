@@ -7,188 +7,188 @@ db.time.drop();
 db.jogador.insertMany([
   
   // CURLING UK M
-  {'nome': 'Matheus Frej', 'idade': '21', 'pais': 'UK', 'sexo': 'M', 'esporte': 'Curling'},
-  {'nome': 'Rodrigo Mesel', 'idade': '21', 'pais': 'UK', 'sexo': 'M', 'esporte': 'Curling'},
-  {'nome': 'Lucas Melo', 'idade': '21', 'pais': 'UK', 'sexo': 'M', 'esporte': 'Curling'},
-  {'nome': 'Lucas Oliveira', 'idade': '21', 'pais': 'UK', 'sexo': 'M', 'esporte': 'Curling'},
+  {'nome': 'Matheus Frej', 'idade': 21, 'pais': 'UK', 'sexo': 'M', 'esporte': 'Curling'},
+  {'nome': 'Rodrigo Mesel', 'idade': 21, 'pais': 'UK', 'sexo': 'M', 'esporte': 'Curling'},
+  {'nome': 'Lucas Melo', 'idade': 21, 'pais': 'UK', 'sexo': 'M', 'esporte': 'Curling'},
+  {'nome': 'Lucas Oliveira', 'idade': 21, 'pais': 'UK', 'sexo': 'M', 'esporte': 'Curling'},
 
   // CURLING SUECIA M
-  {'nome': 'Niklas Edin', 'idade': '36', 'pais': 'SE', 'sexo': 'M', 'esporte': 'Curling'},
-  {'nome': 'Oskar Eriksson', 'idade': '28', 'pais': 'SE', 'sexo': 'M', 'esporte': 'Curling'},
-  {'nome': 'Rasmus Wranå', 'idade': '31', 'pais': 'SE', 'sexo': 'M', 'esporte': 'Curling'},
-  {'nome': 'Christoffer Sundgren', 'idade': '26', 'pais': 'SE', 'sexo': 'M', 'esporte': 'Curling'},
+  {'nome': 'Niklas Edin', 'idade': 36, 'pais': 'SE', 'sexo': 'M', 'esporte': 'Curling'},
+  {'nome': 'Oskar Eriksson', 'idade': 28, 'pais': 'SE', 'sexo': 'M', 'esporte': 'Curling'},
+  {'nome': 'Rasmus Wranå', 'idade': 31, 'pais': 'SE', 'sexo': 'M', 'esporte': 'Curling'},
+  {'nome': 'Christoffer Sundgren', 'idade': 26, 'pais': 'SE', 'sexo': 'M', 'esporte': 'Curling'},
   
   // CURLING CANADA M
-  {'nome': 'Brad Gushue', 'idade': '37', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Curling'},
-  {'nome': 'Mark Nichols', 'idade': '41', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Curling'},
-  {'nome': 'Geoff Walker', 'idade': '29', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Curling'},
-  {'nome': 'Brett Gallant', 'idade': '23', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Curling'},
+  {'nome': 'Brad Gushue', 'idade': 37, 'pais': 'CA', 'sexo': 'M', 'esporte': 'Curling'},
+  {'nome': 'Mark Nichols', 'idade': 41, 'pais': 'CA', 'sexo': 'M', 'esporte': 'Curling'},
+  {'nome': 'Geoff Walker', 'idade': 29, 'pais': 'CA', 'sexo': 'M', 'esporte': 'Curling'},
+  {'nome': 'Brett Gallant', 'idade': 23, 'pais': 'CA', 'sexo': 'M', 'esporte': 'Curling'},
   
   // CURLING CHINA F
-  {'nome': 'Han Yu', 'idade': '30', 'pais': 'CN', 'sexo': 'F', 'esporte': 'Curling'},
-  {'nome': 'Wang Rui', 'idade': '33', 'pais': 'CN', 'sexo': 'F', 'esporte': 'Curling'},
-  {'nome': 'Dong Ziqi', 'idade': '27', 'pais': 'CN', 'sexo': 'F', 'esporte': 'Curling'},
-  {'nome': 'Zhang Lijun', 'idade': '29', 'pais': 'CN', 'sexo': 'F', 'esporte': 'Curling'},
+  {'nome': 'Han Yu', 'idade': 30, 'pais': 'CN', 'sexo': 'F', 'esporte': 'Curling'},
+  {'nome': 'Wang Rui', 'idade': 33, 'pais': 'CN', 'sexo': 'F', 'esporte': 'Curling'},
+  {'nome': 'Dong Ziqi', 'idade': 27, 'pais': 'CN', 'sexo': 'F', 'esporte': 'Curling'},
+  {'nome': 'Zhang Lijun', 'idade': 29, 'pais': 'CN', 'sexo': 'F', 'esporte': 'Curling'},
 
   // CURLING DINAMARCA F
-  {'nome': 'Madeleine Dupont', 'idade': '28', 'pais': 'DK', 'sexo': 'F', 'esporte': 'Curling'},
-  {'nome': 'Mathilde Halse', 'idade': '33', 'pais': 'DK', 'sexo': 'F', 'esporte': 'Curling'},
-  {'nome': 'Denise Dupont', 'idade': '30', 'pais': 'DK', 'sexo': 'F', 'esporte': 'Curling'},
-  {'nome': 'My Larsen', 'idade': '27', 'pais': 'DK', 'sexo': 'F', 'esporte': 'Curling'},
+  {'nome': 'Madeleine Dupont', 'idade': 28, 'pais': 'DK', 'sexo': 'F', 'esporte': 'Curling'},
+  {'nome': 'Mathilde Halse', 'idade': 33, 'pais': 'DK', 'sexo': 'F', 'esporte': 'Curling'},
+  {'nome': 'Denise Dupont', 'idade': 30, 'pais': 'DK', 'sexo': 'F', 'esporte': 'Curling'},
+  {'nome': 'My Larsen', 'idade': 27, 'pais': 'DK', 'sexo': 'F', 'esporte': 'Curling'},
 
   // CURLING CANADA F
-  {'nome': 'Jennifer Jones', 'idade': '32', 'pais': 'CA', 'sexo': 'F', 'esporte': 'Curling'},
-  {'nome': 'Kaitlyn Lawes', 'idade': '25', 'pais': 'CA', 'sexo': 'F', 'esporte': 'Curling'},
-  {'nome': 'Jocelyn Peterman', 'idade': '31', 'pais': 'CA', 'sexo': 'F', 'esporte': 'Curling'},
-  {'nome': 'Dawn McEwen', 'idade': '33', 'pais': 'CA', 'sexo': 'F', 'esporte': 'Curling'},
+  {'nome': 'Jennifer Jones', 'idade': 32, 'pais': 'CA', 'sexo': 'F', 'esporte': 'Curling'},
+  {'nome': 'Kaitlyn Lawes', 'idade': 25, 'pais': 'CA', 'sexo': 'F', 'esporte': 'Curling'},
+  {'nome': 'Jocelyn Peterman', 'idade': 31, 'pais': 'CA', 'sexo': 'F', 'esporte': 'Curling'},
+  {'nome': 'Dawn McEwen', 'idade': 33, 'pais': 'CA', 'sexo': 'F', 'esporte': 'Curling'},
 
   // Biatlo (individual) M
-  {'nome': 'Artur Santos', 'idade': '21', 'pais': 'BR', 'sexo': 'M', 'esporte': 'Biatlo'},
-  {'nome': 'Victor Mateus', 'idade': '21', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Biatlo'},
-  {'nome': 'Rodöryg Moisël', 'idade': '24', 'pais': 'NO', 'sexo': 'M', 'esporte': 'Biatlo'},
+  {'nome': 'Artur Santos', 'idade': 21, 'pais': 'BR', 'sexo': 'M', 'esporte': 'Biatlo'},
+  {'nome': 'Victor Mateus', 'idade': 21, 'pais': 'CA', 'sexo': 'M', 'esporte': 'Biatlo'},
+  {'nome': 'Rodöryg Moisël', 'idade': 24, 'pais': 'NO', 'sexo': 'M', 'esporte': 'Biatlo'},
 
   // Biatlo (individual) F
-  {'nome': 'Marte Olsbu Røiseland', 'idade': '24', 'pais': 'NO', 'sexo': 'F', 'esporte': 'Biatlo'},
-  {'nome': 'Denise Herrmann', 'idade': '23', 'pais': 'CA', 'sexo': 'F', 'esporte': 'Biatlo'},
-  {'nome': 'Raissa Heimann', 'idade': '21', 'pais': 'USA', 'sexo': 'F', 'esporte': 'Biatlo'},
+  {'nome': 'Marte Olsbu Røiseland', 'idade': 24, 'pais': 'NO', 'sexo': 'F', 'esporte': 'Biatlo'},
+  {'nome': 'Denise Herrmann', 'idade': 23, 'pais': 'CA', 'sexo': 'F', 'esporte': 'Biatlo'},
+  {'nome': 'Raissa Heimann', 'idade': 21, 'pais': 'USA', 'sexo': 'F', 'esporte': 'Biatlo'},
 
-  // Bobsled4 M ALEMANHA
-  {'nome': 'Francesco Friedrich', 'idade': '32', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Bobsled4'},
-  {'nome': 'Alexander Schueller', 'idade': '25', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Bobsled4'},
-  {'nome': 'Thorsten Margis', 'idade': '33', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Bobsled4'},
-  {'nome': 'Candy Bauer', 'idade': '36', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Bobsled4'},
+  // Bobsled 4 M ALEMANHA
+  {'nome': 'Francesco Friedrich', 'idade': 32, 'pais': 'DE', 'sexo': 'M', 'esporte': 'Bobsled 4'},
+  {'nome': 'Alexander Schueller', 'idade': 25, 'pais': 'DE', 'sexo': 'M', 'esporte': 'Bobsled 4'},
+  {'nome': 'Thorsten Margis', 'idade': 33, 'pais': 'DE', 'sexo': 'M', 'esporte': 'Bobsled 4'},
+  {'nome': 'Candy Bauer', 'idade': 36, 'pais': 'DE', 'sexo': 'M', 'esporte': 'Bobsled 4'},
 
-  // Bobsled4 M CANADA
-  {'nome': 'Justin Kripps', 'idade': '35', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Bobsled4'},
-  {'nome': 'Ben Coakwell', 'idade': '35', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Bobsled4'},
-  {'nome': 'Ryan Sommer', 'idade': '29', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Bobsled4'},
-  {'nome': 'Cameron Stones', 'idade': '30', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Bobsled4'},
+  // Bobsled 4 M CANADA
+  {'nome': 'Justin Kripps', 'idade': 35, 'pais': 'CA', 'sexo': 'M', 'esporte': 'Bobsled 4'},
+  {'nome': 'Ben Coakwell', 'idade': 35, 'pais': 'CA', 'sexo': 'M', 'esporte': 'Bobsled 4'},
+  {'nome': 'Ryan Sommer', 'idade': 29, 'pais': 'CA', 'sexo': 'M', 'esporte': 'Bobsled 4'},
+  {'nome': 'Cameron Stones', 'idade': 30, 'pais': 'CA', 'sexo': 'M', 'esporte': 'Bobsled 4'},
 
-  // Bobsled4 M UK
-  {'nome': 'Brad Hall', 'idade': '32', 'pais': 'UK', 'sexo': 'M', 'esporte': 'Bobsled4'},
-  {'nome': 'Greg Cackett', 'idade': '33', 'pais': 'UK', 'sexo': 'M', 'esporte': 'Bobsled4'},
-  {'nome': 'Taylor Lawrence', 'idade': '26', 'pais': 'UK', 'sexo': 'M', 'esporte': 'Bobsled4'},
-  {'nome': 'Nick Gleeson', 'idade': '26', 'pais': 'UK', 'sexo': 'M', 'esporte': 'Bobsled4'},
+  // Bobsled 4 M UK
+  {'nome': 'Brad Hall', 'idade': 32, 'pais': 'UK', 'sexo': 'M', 'esporte': 'Bobsled 4'},
+  {'nome': 'Greg Cackett', 'idade': 33, 'pais': 'UK', 'sexo': 'M', 'esporte': 'Bobsled 4'},
+  {'nome': 'Taylor Lawrence', 'idade': 26, 'pais': 'UK', 'sexo': 'M', 'esporte': 'Bobsled 4'},
+  {'nome': 'Nick Gleeson', 'idade': 26, 'pais': 'UK', 'sexo': 'M', 'esporte': 'Bobsled 4'},
 
-  // Bobsled4 M BR
-  {'nome': 'Edson Bindilatti', 'idade': '43', 'pais': 'BR', 'sexo': 'M', 'esporte': 'Bobsled4'},
-  {'nome': 'Edson Ricardo Martins', 'idade': '33', 'pais': 'BR', 'sexo': 'M', 'esporte': 'Bobsled4'},
-  {'nome': 'Rafael Souza da Silva', 'idade': '26', 'pais': 'BR', 'sexo': 'M', 'esporte': 'Bobsled4'},
-  {'nome': 'Erick Gilson Vianna Jeronimo', 'idade': '29', 'pais': 'BR', 'sexo': 'M', 'esporte': 'Bobsled4'},
+  // Bobsled 4 M BR
+  {'nome': 'Edson Bindilatti', 'idade': 43, 'pais': 'BR', 'sexo': 'M', 'esporte': 'Bobsled 4'},
+  {'nome': 'Edson Ricardo Martins', 'idade': 33, 'pais': 'BR', 'sexo': 'M', 'esporte': 'Bobsled 4'},
+  {'nome': 'Rafael Souza da Silva', 'idade': 26, 'pais': 'BR', 'sexo': 'M', 'esporte': 'Bobsled 4'},
+  {'nome': 'Erick Gilson Vianna Jeronimo', 'idade': 29, 'pais': 'BR', 'sexo': 'M', 'esporte': 'Bobsled 4'},
 
-  // Bobsled2 M ALEMANHA
-  {'nome': 'Johannes Lochner', 'idade': '32', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Bobsled2'},
-  {'nome': 'Florian Bauer', 'idade': '28', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Bobsled2'},
+  // Bobsled 2 M ALEMANHA
+  {'nome': 'Johannes Lochner', 'idade': 32, 'pais': 'DE', 'sexo': 'M', 'esporte': 'Bobsled 2'},
+  {'nome': 'Florian Bauer', 'idade': 28, 'pais': 'DE', 'sexo': 'M', 'esporte': 'Bobsled 2'},
 
-  //Bobsled2 M AUSTRIA
-  {'nome': 'Benjamin Maier', 'idade': '28', 'pais': 'AU', 'sexo': 'M', 'esporte': 'Bobsled2'},
-  {'nome': 'Markus Sammer', 'idade': '34', 'pais': 'AU', 'sexo': 'M', 'esporte': 'Bobsled2'},
+  //Bobsled 2 M AUSTRIA
+  {'nome': 'Benjamin Maier', 'idade': 28, 'pais': 'AU', 'sexo': 'M', 'esporte': 'Bobsled 2'},
+  {'nome': 'Markus Sammer', 'idade': 34, 'pais': 'AU', 'sexo': 'M', 'esporte': 'Bobsled 2'},
   
-  //Bobsled2 M CANADA
-  {'nome': 'Christopher Spring', 'idade': '38', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Bobsled2'},
-  {'nome': 'Mike Evelyn', 'idade': '29', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Bobsled2'},
+  //Bobsled 2 M CANADA
+  {'nome': 'Christopher Spring', 'idade': 38, 'pais': 'CA', 'sexo': 'M', 'esporte': 'Bobsled 2'},
+  {'nome': 'Mike Evelyn', 'idade': 29, 'pais': 'CA', 'sexo': 'M', 'esporte': 'Bobsled 2'},
   
-  //Bobsled2 M USA
-  {'nome': 'Frank Delduca', 'idade': '31', 'pais': 'USA', 'sexo': 'M', 'esporte': 'Bobsled2'},
-  {'nome': 'Hakeem Abdul-Saboor', 'idade': '35', 'pais': 'USA', 'sexo': 'M', 'esporte': 'Bobsled2'},
+  //Bobsled 2 M USA
+  {'nome': 'Frank Delduca', 'idade': 31, 'pais': 'USA', 'sexo': 'M', 'esporte': 'Bobsled 2'},
+  {'nome': 'Hakeem Abdul-Saboor', 'idade': 35, 'pais': 'USA', 'sexo': 'M', 'esporte': 'Bobsled 2'},
 
   // Bobsled Monobob F
-  {'nome': 'Kaillie Humphries', 'idade': '37', 'pais': 'USA', 'sexo': 'F', 'esporte': 'Bobsled Monobob'},
-  {'nome': 'Elana Meyers Taylor', 'idade': '38', 'pais': 'USA', 'sexo': 'F', 'esporte': 'Bobsled Monobob'},
-  {'nome': 'Christine De Bruin', 'idade': '33', 'pais': 'CA', 'sexo': 'F', 'esporte': 'Bobsled Monobob'},
-  {'nome': 'Laura Nolte', 'idade': '24', 'pais': 'DE', 'sexo': 'F', 'esporte': 'Bobsled Monobob'},
-  {'nome': 'Mingming Huai', 'idade': '27', 'pais': 'CN', 'sexo': 'F', 'esporte': 'Bobsled Monobob'},
-  {'nome': 'Katrin Beierl', 'idade': '31', 'pais': 'AU', 'sexo': 'F', 'esporte': 'Bobsled Monobob'},
+  {'nome': 'Kaillie Humphries', 'idade': 37, 'pais': 'USA', 'sexo': 'F', 'esporte': 'Bobsled Monobob'},
+  {'nome': 'Elana Meyers Taylor', 'idade': 38, 'pais': 'USA', 'sexo': 'F', 'esporte': 'Bobsled Monobob'},
+  {'nome': 'Christine De Bruin', 'idade': 33, 'pais': 'CA', 'sexo': 'F', 'esporte': 'Bobsled Monobob'},
+  {'nome': 'Laura Nolte', 'idade': 24, 'pais': 'DE', 'sexo': 'F', 'esporte': 'Bobsled Monobob'},
+  {'nome': 'Mingming Huai', 'idade': 27, 'pais': 'CN', 'sexo': 'F', 'esporte': 'Bobsled Monobob'},
+  {'nome': 'Katrin Beierl', 'idade': 31, 'pais': 'AU', 'sexo': 'F', 'esporte': 'Bobsled Monobob'},
 
-  // Bobsled2 F ALEMANHA
-  {'nome': 'Mariama Jamanka', 'idade': '32', 'pais': 'DE', 'sexo': 'F', 'esporte': 'Bobsled2'},
-  {'nome': 'Alexandra Burghardt', 'idade': '28', 'pais': 'DE', 'sexo': 'F', 'esporte': 'Bobsled2'},
+  // Bobsled 2 F ALEMANHA
+  {'nome': 'Mariama Jamanka', 'idade': 32, 'pais': 'DE', 'sexo': 'F', 'esporte': 'Bobsled 2'},
+  {'nome': 'Alexandra Burghardt', 'idade': 28, 'pais': 'DE', 'sexo': 'F', 'esporte': 'Bobsled 2'},
 
-  // Bobsled2 F CANADA
-  {'nome': 'Cynthia Appiah', 'idade': '32', 'pais': 'CA', 'sexo': 'F', 'esporte': 'Bobsled2'},
-  {'nome': 'Dawn Richardson Wilson', 'idade': '23', 'pais': 'CA', 'sexo': 'F', 'esporte': 'Bobsled2'},
+  // Bobsled 2 F CANADA
+  {'nome': 'Cynthia Appiah', 'idade': 32, 'pais': 'CA', 'sexo': 'F', 'esporte': 'Bobsled 2'},
+  {'nome': 'Dawn Richardson Wilson', 'idade': 23, 'pais': 'CA', 'sexo': 'F', 'esporte': 'Bobsled 2'},
 
-  // Bobsled2 F CHINA
-  {'nome': 'Qing Ying', 'idade': '25', 'pais': 'CN', 'sexo': 'F', 'esporte': 'Bobsled2'},
-  {'nome': 'Jiani Du', 'idade': '23', 'pais': 'CN', 'sexo': 'F', 'esporte': 'Bobsled2'},
+  // Bobsled 2 F CHINA
+  {'nome': 'Qing Ying', 'idade': 25, 'pais': 'CN', 'sexo': 'F', 'esporte': 'Bobsled 2'},
+  {'nome': 'Jiani Du', 'idade': 23, 'pais': 'CN', 'sexo': 'F', 'esporte': 'Bobsled 2'},
 
   // Speed Skating M
-  {'nome': 'Nils Van Der Poel', 'idade': '26', 'pais': 'SE', 'sexo': 'M', 'esporte': 'Speed Skating'},
-  {'nome': 'Graeme Fish', 'idade': '25', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Speed Skating'},
-  {'nome': 'Patrick Beckert', 'idade': '32', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Speed Skating'},
-  {'nome': 'Ziwei Ren', 'idade': '25', 'pais': 'CN', 'sexo': 'M', 'esporte': 'Speed Skating'},
-  {'nome': 'Wenlong Li', 'idade': '21', 'pais': 'CN', 'sexo': 'M', 'esporte': 'Speed Skating'},
-  {'nome': 'Andrew Heo', 'idade': '21', 'pais': 'USA', 'sexo': 'M', 'esporte': 'Speed Skating'},
+  {'nome': 'Nils Van Der Poel', 'idade': 26, 'pais': 'SE', 'sexo': 'M', 'esporte': 'Speed Skating'},
+  {'nome': 'Graeme Fish', 'idade': 25, 'pais': 'CA', 'sexo': 'M', 'esporte': 'Speed Skating'},
+  {'nome': 'Patrick Beckert', 'idade': 32, 'pais': 'DE', 'sexo': 'M', 'esporte': 'Speed Skating'},
+  {'nome': 'Ziwei Ren', 'idade': 25, 'pais': 'CN', 'sexo': 'M', 'esporte': 'Speed Skating'},
+  {'nome': 'Wenlong Li', 'idade': 21, 'pais': 'CN', 'sexo': 'M', 'esporte': 'Speed Skating'},
+  {'nome': 'Andrew Heo', 'idade': 21, 'pais': 'USA', 'sexo': 'M', 'esporte': 'Speed Skating'},
 
   // Ski Jumping M (individual)
-  {'nome': 'Marius Lindvik', 'idade': '24', 'pais': 'NO', 'sexo': 'M', 'esporte': 'Ski Jumping'},
-  {'nome': 'Karl Geiger', 'idade': '25', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Ski Jumping'},
-  {'nome': 'Manuel Fettner', 'idade': '37', 'pais': 'AU', 'sexo': 'M', 'esporte': 'Ski Jumping'},
-  {'nome': 'Halvor Egner Granerud', 'idade': '26', 'pais': 'NO', 'sexo': 'M', 'esporte': 'Ski Jumping'},
+  {'nome': 'Marius Lindvik', 'idade': 24, 'pais': 'NO', 'sexo': 'M', 'esporte': 'Ski Jumping'},
+  {'nome': 'Karl Geiger', 'idade': 25, 'pais': 'DE', 'sexo': 'M', 'esporte': 'Ski Jumping'},
+  {'nome': 'Manuel Fettner', 'idade': 37, 'pais': 'AU', 'sexo': 'M', 'esporte': 'Ski Jumping'},
+  {'nome': 'Halvor Egner Granerud', 'idade': 26, 'pais': 'NO', 'sexo': 'M', 'esporte': 'Ski Jumping'},
 
   // Ski Jumping F (individual)
-  {'nome': 'Katharina Althaus', 'idade': '26', 'pais': 'DE', 'sexo': 'F', 'esporte': 'Ski Jumping'},
-  {'nome': 'Silje Opseth', 'idade': '22', 'pais': 'NO', 'sexo': 'F', 'esporte': 'Ski Jumping'},
-  {'nome': 'Frida Westman', 'idade': '21', 'pais': 'SE', 'sexo': 'F', 'esporte': 'Ski Jumping'},
-  {'nome': 'Lisa Eder', 'idade': '21', 'pais': 'AU', 'sexo': 'F', 'esporte': 'Ski Jumping'},
+  {'nome': 'Katharina Althaus', 'idade': 26, 'pais': 'DE', 'sexo': 'F', 'esporte': 'Ski Jumping'},
+  {'nome': 'Silje Opseth', 'idade': 22, 'pais': 'NO', 'sexo': 'F', 'esporte': 'Ski Jumping'},
+  {'nome': 'Frida Westman', 'idade': 21, 'pais': 'SE', 'sexo': 'F', 'esporte': 'Ski Jumping'},
+  {'nome': 'Lisa Eder', 'idade': 21, 'pais': 'AU', 'sexo': 'F', 'esporte': 'Ski Jumping'},
 
   // HOCKEY USA M
-  {'nome': 'Matty Beniers', 'idade': '20', 'pais': 'USA', 'sexo': 'M', 'esporte': 'Hockey'},
-  {'nome': 'Kenny Agostino', 'idade': '30', 'pais': 'USA', 'sexo': 'M', 'esporte': 'Hockey'},
-  {'nome': 'Jake Sanderson', 'idade': '20', 'pais': 'USA', 'sexo': 'M', 'esporte': 'Hockey'},
-  {'nome': 'Nick Abruzzese', 'idade': '23', 'pais': 'USA', 'sexo': 'M', 'esporte': 'Hockey'},
-  {'nome': 'Drew Commesso', 'idade': '20', 'pais': 'USA', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Matty Beniers', 'idade': 20, 'pais': 'USA', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Kenny Agostino', 'idade': 30, 'pais': 'USA', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Jake Sanderson', 'idade': 20, 'pais': 'USA', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Nick Abruzzese', 'idade': 23, 'pais': 'USA', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Drew Commesso', 'idade': 20, 'pais': 'USA', 'sexo': 'M', 'esporte': 'Hockey'},
 
   //HOCKEY CANADA M
-  {'nome': 'Corban Knight', 'idade': '32', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Hockey'},
-  {'nome': 'Ben Street', 'idade': '35', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Hockey'},
-  {'nome': 'Devon Levi', 'idade': '21', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Hockey'},
-  {'nome': 'Morgan Ellis', 'idade': '30', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Hockey'},
-  {'nome': 'Eric O’Dell', 'idade': '32', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Corban Knight', 'idade': 32, 'pais': 'CA', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Ben Street', 'idade': 35, 'pais': 'CA', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Devon Levi', 'idade': 21, 'pais': 'CA', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Morgan Ellis', 'idade': 30, 'pais': 'CA', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Eric O’Dell', 'idade': 32, 'pais': 'CA', 'sexo': 'M', 'esporte': 'Hockey'},
   
   //HOCKEY ALEMANHA M
-  {'nome': 'Tobias Rieder', 'idade': '29', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Hockey'},
-  {'nome': 'Nicolas Krämmer', 'idade': '30', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Hockey'},
-  {'nome': 'Fabio Wagner', 'idade': '27', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Hockey'},
-  {'nome': 'Jonas Muller', 'idade': '27', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Hockey'},
-  {'nome': 'Danny aus den Birken', 'idade': '37', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Tobias Rieder', 'idade': 29, 'pais': 'DE', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Nicolas Krämmer', 'idade': 30, 'pais': 'DE', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Fabio Wagner', 'idade': 27, 'pais': 'DE', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Jonas Muller', 'idade': 27, 'pais': 'DE', 'sexo': 'M', 'esporte': 'Hockey'},
+  {'nome': 'Danny aus den Birken', 'idade': 37, 'pais': 'DE', 'sexo': 'M', 'esporte': 'Hockey'},
 
   // Patinação artística (individual)
-  {'nome': 'Mariah Bell', 'idade': '25', 'pais': 'USA', 'sexo': 'F', 'esporte': 'Patinação artística'},
-  {'nome': 'Karen Chen', 'idade': '22', 'pais': 'USA', 'sexo': 'F', 'esporte': 'Patinação artística'},
-  {'nome': 'Madeline Schizas', 'idade': '19', 'pais': 'CA', 'sexo': 'F', 'esporte': 'Patinação artística'},
-  {'nome': 'Anita Östlund', 'idade': '21', 'pais': 'SE', 'sexo': 'F', 'esporte': 'Patinação artística'},
-  {'nome': 'Zhu Yi', 'idade': '20', 'pais': 'CN', 'sexo': 'F', 'esporte': 'Patinação artística'},
+  {'nome': 'Mariah Bell', 'idade': 25, 'pais': 'USA', 'sexo': 'F', 'esporte': 'Patinação artística'},
+  {'nome': 'Karen Chen', 'idade': 22, 'pais': 'USA', 'sexo': 'F', 'esporte': 'Patinação artística'},
+  {'nome': 'Madeline Schizas', 'idade': 19, 'pais': 'CA', 'sexo': 'F', 'esporte': 'Patinação artística'},
+  {'nome': 'Anita Östlund', 'idade': 21, 'pais': 'SE', 'sexo': 'F', 'esporte': 'Patinação artística'},
+  {'nome': 'Zhu Yi', 'idade': 20, 'pais': 'CN', 'sexo': 'F', 'esporte': 'Patinação artística'},
 
   // SnowBoard (individual)
-  {'nome': 'Chase Blackwell', 'idade': '23', 'pais': 'USA', 'sexo': 'M', 'esporte': 'Snowboard'},
-  {'nome': 'Chase Josey', 'idade': '27', 'pais': 'USA', 'sexo': 'M', 'esporte': 'Snowboard'},
-  {'nome': 'Benjamin Karl', 'idade': '37', 'pais': 'AU', 'sexo': 'M', 'esporte': 'Snowboard'},
-  {'nome': 'Su Yiming', 'idade': '18', 'pais': 'CN', 'sexo': 'M', 'esporte': 'Snowboard'},
-  {'nome': 'Mons Røisland', 'idade': '25', 'pais': 'NO', 'sexo': 'M', 'esporte': 'Snowboard'},
+  {'nome': 'Chase Blackwell', 'idade': 23, 'pais': 'USA', 'sexo': 'M', 'esporte': 'Snowboard'},
+  {'nome': 'Chase Josey', 'idade': 27, 'pais': 'USA', 'sexo': 'M', 'esporte': 'Snowboard'},
+  {'nome': 'Benjamin Karl', 'idade': 37, 'pais': 'AU', 'sexo': 'M', 'esporte': 'Snowboard'},
+  {'nome': 'Su Yiming', 'idade': 18, 'pais': 'CN', 'sexo': 'M', 'esporte': 'Snowboard'},
+  {'nome': 'Mons Røisland', 'idade': 25, 'pais': 'NO', 'sexo': 'M', 'esporte': 'Snowboard'},
 
   // Combinado Nórdico (Individual)
-  {'nome': 'Jørgen Graabak', 'idade': '31', 'pais': 'NO', 'sexo': 'M', 'esporte': 'Combinado Nordico'},
-  {'nome': 'Jens Lurås Oftebro', 'idade': '22', 'pais': 'NO', 'sexo': 'M', 'esporte': 'Combinado Nordico'},
-  {'nome': 'Lukas Greiderer', 'idade': '29', 'pais': 'AU', 'sexo': 'M', 'esporte': 'Combinado Nordico'},
-  {'nome': 'Vinzenz Geiger', 'idade': '25', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Combinado Nordico'},
-  {'nome': 'Martin Fritz', 'idade': '27', 'pais': 'AU', 'sexo': 'M', 'esporte': 'Combinado Nordico'},
+  {'nome': 'Jørgen Graabak', 'idade': 31, 'pais': 'NO', 'sexo': 'M', 'esporte': 'Combinado Nordico'},
+  {'nome': 'Jens Lurås Oftebro', 'idade': 22, 'pais': 'NO', 'sexo': 'M', 'esporte': 'Combinado Nordico'},
+  {'nome': 'Lukas Greiderer', 'idade': 29, 'pais': 'AU', 'sexo': 'M', 'esporte': 'Combinado Nordico'},
+  {'nome': 'Vinzenz Geiger', 'idade': 25, 'pais': 'DE', 'sexo': 'M', 'esporte': 'Combinado Nordico'},
+  {'nome': 'Martin Fritz', 'idade': 27, 'pais': 'AU', 'sexo': 'M', 'esporte': 'Combinado Nordico'},
   
   // Esqui alpino (Individual)
-  {'nome': 'Johannes Strolz', 'idade': '30', 'pais': 'AU', 'sexo': 'M', 'esporte': 'Esqui Alpino'},
-  {'nome': 'Aleksander Aamodt Kilde', 'idade': '30', 'pais': 'NO', 'sexo': 'M', 'esporte': 'Esqui Alpino'},
-  {'nome': 'James Crawford', 'idade': '25', 'pais': 'CA', 'sexo': 'M', 'esporte': 'Esqui Alpino'},
-  {'nome': 'Marco Schwarz', 'idade': '27', 'pais': 'AU', 'sexo': 'M', 'esporte': 'Esqui Alpino'},
+  {'nome': 'Johannes Strolz', 'idade': 30, 'pais': 'AU', 'sexo': 'M', 'esporte': 'Esqui Alpino'},
+  {'nome': 'Aleksander Aamodt Kilde', 'idade': 30, 'pais': 'NO', 'sexo': 'M', 'esporte': 'Esqui Alpino'},
+  {'nome': 'James Crawford', 'idade': 25, 'pais': 'CA', 'sexo': 'M', 'esporte': 'Esqui Alpino'},
+  {'nome': 'Marco Schwarz', 'idade': 27, 'pais': 'AU', 'sexo': 'M', 'esporte': 'Esqui Alpino'},
   
   // Luge(Individual)
-  {'nome': 'Johannes Ludwig', 'idade': '36', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Luge'},
-  {'nome': 'Wolfgang Kindl', 'idade': '34', 'pais': 'AU', 'sexo': 'M', 'esporte': 'Luge'},
-  {'nome': 'Toni Eggert', 'idade': '34', 'pais': 'DE', 'sexo': 'M', 'esporte': 'Luge'},
-  {'nome': 'Lorenz Koller', 'idade': '28', 'pais': 'AU', 'sexo': 'M', 'esporte': 'Luge'},
-  {'nome': 'Thomas Steu', 'idade': '28', 'pais': 'AU', 'sexo': 'M', 'esporte': 'Luge'},
+  {'nome': 'Johannes Ludwig', 'idade': 36, 'pais': 'DE', 'sexo': 'M', 'esporte': 'Luge'},
+  {'nome': 'Wolfgang Kindl', 'idade': 34, 'pais': 'AU', 'sexo': 'M', 'esporte': 'Luge'},
+  {'nome': 'Toni Eggert', 'idade': 34, 'pais': 'DE', 'sexo': 'M', 'esporte': 'Luge'},
+  {'nome': 'Lorenz Koller', 'idade': 28, 'pais': 'AU', 'sexo': 'M', 'esporte': 'Luge'},
+  {'nome': 'Thomas Steu', 'idade': 28, 'pais': 'AU', 'sexo': 'M', 'esporte': 'Luge'},
 ]);
 
-// 25. UPDATE
+// 25. UPDATE, 21. SET
 // Alterando nome errado de jogador
 db.jogador.updateOne({nome: 'Victor Mateus'}, {$set: {nome: "Victor Matheus"}});
 
@@ -276,28 +276,28 @@ db.time.insertMany([
   
   //Bobsled 4 M
   //UK
-  {'esporte': 'Bobsled4', 'pais': 'UK', 'sexo': 'M','jogadores': [
+  {'esporte': 'Bobsled 4', 'pais': 'UK', 'sexo': 'M','jogadores': [
     db.jogador.findOne({nome: 'Brad Hall'}),
     db.jogador.findOne({nome: 'Greg Cackett'}),
     db.jogador.findOne({nome: 'Taylor Lawrence'}),
     db.jogador.findOne({nome: 'Nick Gleeson'}),
   ]},
   //Alemanha
-  {'esporte': 'Bobsled4', 'pais': 'DE', 'sexo': 'M','jogadores': [
+  {'esporte': 'Bobsled 4', 'pais': 'DE', 'sexo': 'M','jogadores': [
     db.jogador.findOne({nome: 'Francesco Friedrich'}),
     db.jogador.findOne({nome: 'Alexander Schueller'}),
     db.jogador.findOne({nome: 'Thorsten Margis'}),
     db.jogador.findOne({nome: 'Candy Bauer'}),
   ]},
   //Canada
-  {'esporte': 'Bobsled4', 'pais': 'CA', 'sexo': 'M','jogadores': [
+  {'esporte': 'Bobsled 4', 'pais': 'CA', 'sexo': 'M','jogadores': [
     db.jogador.findOne({nome: 'Justin Kripps'}),
     db.jogador.findOne({nome: 'Ben Coakwell'}),
     db.jogador.findOne({nome: 'Ryan Sommer'}),
     db.jogador.findOne({nome: 'Cameron Stones'}),
   ]},
   //Brasil
-  {'esporte': 'Bobsled4', 'pais': 'BR', 'sexo': 'M','jogadores': [
+  {'esporte': 'Bobsled 4', 'pais': 'BR', 'sexo': 'M','jogadores': [
     db.jogador.findOne({nome: 'Edson Bindilatti'}),
     db.jogador.findOne({nome: 'Edson Ricardo Martins'}),
     db.jogador.findOne({nome: 'Rafael Souza da Silva'}),
@@ -306,39 +306,39 @@ db.time.insertMany([
 
   //Bobsled 2 M
   //Alemanha
-    {'esporte': 'Bobsled2', 'pais': 'DE', 'sexo': 'M','jogadores': [
+    {'esporte': 'Bobsled 2', 'pais': 'DE', 'sexo': 'M','jogadores': [
     db.jogador.findOne({nome: 'Johannes Lochner'}),
     db.jogador.findOne({nome: 'Florian Bauer'}),
   ]},  
   //Alemanha
-    {'esporte': 'Bobsled2', 'pais': 'AU', 'sexo': 'M','jogadores': [
+    {'esporte': 'Bobsled 2', 'pais': 'AU', 'sexo': 'M','jogadores': [
     db.jogador.findOne({nome: 'Benjamin Maier'}),
     db.jogador.findOne({nome: 'Markus Sammer'}),
   ]},  
   //Canada
-  {'esporte': 'Bobsled2', 'pais': 'CA', 'sexo': 'M','jogadores': [
+  {'esporte': 'Bobsled 2', 'pais': 'CA', 'sexo': 'M','jogadores': [
     db.jogador.findOne({nome: 'Christopher Spring'}),
     db.jogador.findOne({nome: 'Mike Evelyn'}),
   ]},    
   //USA
-  {'esporte': 'Bobsled2', 'pais': 'USA', 'sexo': 'M','jogadores': [
+  {'esporte': 'Bobsled 2', 'pais': 'USA', 'sexo': 'M','jogadores': [
     db.jogador.findOne({nome: 'Frank Delduca'}),
     db.jogador.findOne({nome: 'Hakeem Abdul-Saboor'}),
   ]}, 
 
   //Bobsled 2 F
   //Canada
-  {'esporte': 'Bobsled2', 'pais': 'CA', 'sexo': 'F','jogadores': [
+  {'esporte': 'Bobsled 2', 'pais': 'CA', 'sexo': 'F','jogadores': [
     db.jogador.findOne({nome: 'Cynthia Appiah'}),
     db.jogador.findOne({nome: 'Dawn Richardson Wilson'}),
   ]}, 
   //China
-  {'esporte': 'Bobsled2', 'pais': 'CN', 'sexo': 'F','jogadores': [
+  {'esporte': 'Bobsled 2', 'pais': 'CN', 'sexo': 'F','jogadores': [
     db.jogador.findOne({nome: 'Qing Ying'}),
     db.jogador.findOne({nome: 'Jiani Du'}),
   ]},   
   //Alemanha
-  {'esporte': 'Bobsled2', 'pais': 'DE', 'sexo': 'F','jogadores': [
+  {'esporte': 'Bobsled 2', 'pais': 'DE', 'sexo': 'F','jogadores': [
     db.jogador.findOne({nome: 'Mariama Jamanka'}),
     db.jogador.findOne({nome: 'Alexandra Burghardt'}),
   ]},   
@@ -393,7 +393,7 @@ db.nacao.insertMany([
         }
       },
       {
-        'nome': 'Bobsled4',
+        'nome': 'Bobsled 4',
         'sexo': 'M',
         'tipo': 'Grupo',
         'medalhas': 
@@ -415,7 +415,7 @@ db.nacao.insertMany([
         }
       },
       {
-        'nome': 'Bobsled2',
+        'nome': 'Bobsled 2',
         'sexo': 'F',
         'tipo': 'Grupo',
         'medalhas': 
@@ -471,7 +471,7 @@ db.nacao.insertMany([
         }
       },
       {
-        'nome': 'Bobsled4',
+        'nome': 'Bobsled 4',
         'sexo': 'M',
         'tipo': 'Grupo',
         'medalhas': 
@@ -561,7 +561,7 @@ db.nacao.insertMany([
         }
       },
       {
-        'nome': 'Bobsled2',
+        'nome': 'Bobsled 2',
         'sexo': 'M',
         'tipo': 'Grupo',
         'medalhas': 
@@ -629,7 +629,7 @@ db.nacao.insertMany([
         }
       },
       {
-        'nome': 'Bobsled2',
+        'nome': 'Bobsled 2',
         'sexo': 'F',
         'tipo': 'Grupo',
         'medalhas': 
@@ -697,7 +697,7 @@ db.nacao.insertMany([
         }
       },
       {
-        'nome': 'Bobsled4',
+        'nome': 'Bobsled 4',
         'sexo': 'M',
         'tipo': 'Grupo',
         'medalhas': 
@@ -708,7 +708,7 @@ db.nacao.insertMany([
         }
       },
       {
-        'nome': 'Bobsled2',
+        'nome': 'Bobsled 2',
         'sexo': 'M',
         'tipo': 'Grupo',
         'medalhas': 
@@ -719,7 +719,7 @@ db.nacao.insertMany([
         }
       },
       {
-        'nome': 'Bobsled2',
+        'nome': 'Bobsled 2',
         'sexo': 'F',
         'tipo': 'Grupo',
         'medalhas': 
@@ -943,7 +943,7 @@ db.nacao.insertMany([
         }
       },
       {
-        'nome': 'Bobsled2',
+        'nome': 'Bobsled 2',
         'sexo': 'M',
         'tipo': 'Grupo',
         'medalhas': 
