@@ -1,7 +1,7 @@
 // As consultas 25. UPDATE, 27. RENAMECOLLECTION e 30. FINDONE estão no arquivo de povoamento.
 
 // 1. e 2. USE and FIND
-// Consultar jogadores que participam da olimpíada e jogam SnowBoard
+// Consultar jogadores que participam da olimpíada e jogam Biatlo
 use('winterGames');
 db.jogador.find({'esporte': 'Biatlo'});
 
@@ -11,7 +11,7 @@ use('winterGames');
 db.time.find( { 'jogadores': { $size: 4 } } );
 
 // 3. SIZE
-// Consultar países que estão participando de exatamente 1 esporte
+// Consultar países que ganharam exatamente uma medalha
 use('winterGames');
 db.pais.find( {'lista_medalhas': { $size: 1 }});
 
@@ -75,13 +75,6 @@ db.jogador.aggregate([
     }}
 ]);
 
-//
-// Retornar os paises que não tem medalhas de ouro !!!!!!!!!!!!!!!!!!!TA ERRADO!!!!!!!!!!!!!!!!!!!!!!
-use('winterGames');
-db.pais.find( { 'total_medalhas.ouro' : {$exists: false}});
-
-db.Selecoes.find( { titulos: { $exists: false } } )
-
 // 24.FILTER, 4.AGGREGATE, 6.PROJECT
 // Listar as medalhas ganhas em esportes em grupo por país
 use('winterGames');
@@ -99,18 +92,13 @@ db.pais.aggregate([
     }}
 ]);
 
-// ALL DE BRUNA
-db.combos.find({produtos: {$all: [
-    db.produtos.findOne({id_produto: "0c88"})._id, // Smash Mussarela
-    db.produtos.findOne({id_produto: "an5k"})._id  // Refrigerante 1,5L 
-]}}).pretty();
-
-//ALL
-// INCOMPLETO
-db.pais.find({lista_medalhas: {$all: [
-    db.produtos.findOne({id_produto: "0c88"})._id, // Smash Mussarela
-    db.produtos.findOne({id_produto: "an5k"})._id  // Refrigerante 1,5L 
-]}}).pretty();
+// 20.All
+// Retorna todos os times que tem os jogadores Matheus Frej e Rodrigo Mesel
+use('winterGames')
+db.time.find({jogadores: {$all: [
+    db.jogador.findOne({nome: 'Matheus Frej'}),
+    db.jogador.findOne({nome: 'Rodrigo Mesel'}) // Refrigerante 1,5L 
+]}}, {_id: 0, esporte: 1, pais: 1, sexo: 1}).pretty();
 
 // 26.Save
 // Adição de uma nova competidora na tabela de Jogadores
@@ -124,7 +112,7 @@ use('winterGames');
 db.jogador.createIndex({esporte: "text"});
 db.jogador.find( { $text: { $search: "Bobsled"} }, {_id: 0, nome: 1, idade: 1, pais: 1, sexo: 1, esporte: 1}).limit(10).sort({'idade': -1}).pretty();
 
-// 28.Cond, 7GTE, 6.Project, 4.Aggregate
+// 28.Cond, 7.GTE, 6.Project, 4.Aggregate
 // Apresentar comparação entre países com 3 ou mais medalhas e países com 2 ou menos
 use('winterGames');
 db.pais.aggregate([
@@ -137,10 +125,59 @@ db.pais.aggregate([
     }}
 ]).pretty();
 
+//29.LOOKUP, 4.AGGREGATE, 19.PRETTY, 15.LIMIT, 6.PROJECT
+// Mostra todos os times do país de 1 jogador
+use('winterGames')
+db.jogador.aggregate([
+    {
+        $lookup: {
+            from: "time",
+            localField: "pais",
+            foreignField: "pais",
+            as: "Time"
+        }
+    },
+    {$limit: 1},
+    {
+     $project: {
+        _id: 0,nome:1, idade:1, pais:1, sexo:1, "Times de jogadores": "$Time.jogadores.nome"
+     }   
+    }
+]).pretty();
 
 // 31.AddToSet
-// NAO TERMINADO
-db.pais.updateOne(
-    {_id: }
-)
+// Adicionando o reserva Gabriel Souza no time de Curling da UK
+use('winterGames')
+db.time.update(
+    {'esporte': 'Curling', 'pais': 'UK'},
+    { $addToSet: {jogadores: {'nome': 'Gabriel Souza', 'idade': 21, 'pais': 'UK', 'sexo': 'M', 'esporte': 'Curling'}},}
+);
+use('winterGames')
+db.time.find({'esporte': 'Curling', 'pais': 'UK'})
+// REMOÇÃO DE DADO:
+// Gabriel Souza foi demitido, vamos tirá-lo do time
+use('winterGames')
+db.time.update(
+    {'esporte': 'Curling', 'pais': 'UK'},
+    { $pull : {jogadores: {'nome': 'Gabriel Souza'}}}
+);
+use('winterGames')
+db.time.find({'esporte': 'Curling', 'pais': 'UK'})
 
+//13.EXISTS, 19.PRETTY
+//Mostras os países que não têm medalha de ouro
+use('winterGames')
+db.pais.find({"total_medalhas.ouro": {$exists: false}}, {_id: 0, nome: 1, sigla: 1, total_medalhas: 1}).pretty();
+
+//17.MAPREDUCE
+//
+use('winterGames')
+db.time.mapReduce(
+    function() {emit(this.esporte, 1);},
+    function(key,values) {return Array.sum(values);},
+    {
+        query: { sexo: "M" },
+        out: "Resultado"
+    }
+);
+db.Resultado.find();

@@ -456,7 +456,6 @@ db.nacao.insertMany([
     'sigla': 'BR',
     'total_medalhas': {
       'ouro': 1,
-      'prata': 0,
       'bronze': 1},
     'lista_medalhas': [
       {
@@ -489,8 +488,6 @@ db.nacao.insertMany([
     'nome': 'Dinamarca',
     'sigla': 'DK',
     'total_medalhas': {
-      'ouro': 0,
-      'prata': 0,
       'bronze': 1},
     'lista_medalhas': [
       {
@@ -658,8 +655,6 @@ db.nacao.insertMany([
     'nome': 'Reino Unido',
     'sigla': 'UK',
     'total_medalhas': {
-      'ouro': 0,
-      'prata': 0,
       'bronze': 1},
     'lista_medalhas': [
       {
@@ -849,8 +844,7 @@ db.nacao.insertMany([
     'sigla': 'NO',
     'total_medalhas': {
       'ouro': 3,
-      'prata': 3,
-      'bronze': 0},
+      'prata': 3},
     'lista_medalhas': [
       {
         'nome': 'Mons Røisland',
