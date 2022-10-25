@@ -97,7 +97,7 @@ db.pais.aggregate([
 use('winterGames')
 db.time.find({jogadores: {$all: [
     db.jogador.findOne({nome: 'Matheus Frej'}),
-    db.jogador.findOne({nome: 'Rodrigo Mesel'}) // Refrigerante 1,5L 
+    db.jogador.findOne({nome: 'Rodrigo Mesel'})
 ]}}, {_id: 0, esporte: 1, pais: 1, sexo: 1}).pretty();
 
 // 26.Save
@@ -170,7 +170,7 @@ use('winterGames')
 db.pais.find({"total_medalhas.ouro": {$exists: false}}, {_id: 0, nome: 1, sigla: 1, total_medalhas: 1}).pretty();
 
 //17.MAPREDUCE
-//
+// Seleciona os times masculinos, agrupa pelo esporte e conta as ocorrências de cada esporte
 use('winterGames')
 db.time.mapReduce(
     function() {emit(this.esporte, 1);},

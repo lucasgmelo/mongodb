@@ -2,7 +2,7 @@
 use('winterGames');
 
 db.jogador.drop();
-db.time.drop();
+
 // Populando coleção de jogadores
 db.jogador.insertMany([
   
@@ -192,12 +192,11 @@ db.jogador.insertMany([
 // Alterando nome errado de jogador
 db.jogador.updateOne({nome: 'Victor Mateus'}, {$set: {nome: "Victor Matheus"}});
 
-db.time.drop();
-
 
 //30. findOne
 // Para adicionar ao time, realizamos através do findOne,
 // pegando o dado diretamente da collection de jogadores
+db.time.drop();
 
 // Populando coleção de times
 db.time.insertMany([
@@ -346,8 +345,8 @@ db.time.insertMany([
 ])
 
 use('winterGames')
+db.pais.drop();
 db.nacao.drop();
-
 // Populando coleção de Países
 db.nacao.insertMany([
   //CANADA
